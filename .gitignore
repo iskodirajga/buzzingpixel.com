@@ -13,9 +13,6 @@ system/user/cache/*
 	# System
 #------------------------------------
 
-# htaccess
-.htaccess
-
 # Caches
 public_html/cache/*
 
