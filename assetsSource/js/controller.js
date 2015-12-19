@@ -1,9 +1,9 @@
-(function(F) {
-	'use strict';
+// (function(F) {
+// 	'use strict';
 
-	F.controller = {
-		indexSample: [
-			'indexSampleController'
-		]
-	};
-})(window.FAB);
+// 	F.controller = {
+// 		indexSample: [
+// 			'indexSampleController'
+// 		]
+// 	};
+// })(window.FAB);
