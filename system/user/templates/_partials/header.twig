@@ -38,7 +38,6 @@
 	</div>
 
 	{# Header Content #}
-	{{ headerContent }}
 	<div class="site-header__content{% if headerContent is empty %} site-header__content--not-home{% endif %}">
 		<div class="container">
 			{% if headerContent or pageTitle %}
@@ -46,7 +45,7 @@
 
 					{# Set Specific Header Content if Applicable #}
 					{% if headerContent %}
-						{{ headerContent }}
+						{{ headerContent|raw }}
 
 					{# Set General Header Content if else #}
 					{% else %}

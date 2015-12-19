@@ -1,1 +1,32 @@
 {% extends "_layouts/master.twig" %}
+
+{%- block headerBackground -%}{{ yaml.HeaderBackgroundImage }}{%- endblock -%}
+
+{%- block headerContent -%}
+	<div class="home-header">
+		<h1 class="home-header__title">{{ yaml.BannerHeadline }}</h1>
+		<div class="home-header__row">
+			<div class="home-header__left-col">
+				<img src="{{ yaml.PrimaryBannerImage }}" class="computer-left-align">
+			</div>
+			<div class="home-header__right-col">
+				<h2 class="home-header__subtitle">{{ yaml.BannerSubHeading }}</h2>
+				<h3 class="home-header__subtitle2">{{ yaml.BannerSubHeading2 }}</h3>
+				<p class="home-header__content">{{ yaml.BannerContent }}</p>
+				<a href="{{ yaml.BannerActionLink }}" class="button button--rounded home-header__action-button">{{ yaml.BannerActionButton }} &raquo;</a>
+			</div>
+		</div>
+	</div>
+{%- endblock -%}
+
+{%- block content -%}
+	<div class="container site-inner-content home-page-content">
+		<h2 class="home-page-content__heading">{{ yaml.Title }}</h2>
+		<div class="home-page-content__left-image">
+			<img src="{{ yaml.LeftImage }}" class="home-page-content__left-image-tag">
+		</div>
+		<div class="home-page-content__right-content">
+			{{ body|raw }}
+		</div>
+	</div>
+{%- endblock -%}
