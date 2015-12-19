@@ -1,5 +1,11 @@
 {% extends "_layouts/master.twig" %}
 
+{# Set the header background #}
+{%- block headerBackground -%}{{ listingParentYaml.HeaderBackgroundImage }}{%- endblock -%}
+
+{# Set the page title #}
+{%- block pageTitle -%}{{ listingParentYaml.Title }}{%- endblock -%}
+
 {# Set the content class #}
 {% set contentClass = "software-docs-page" %}
 
