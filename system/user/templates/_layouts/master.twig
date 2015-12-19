@@ -1,0 +1,69 @@
+{% spaceless %}
+<!doctype html>
+<html lang="en" id="global" itemscope itemtype="http://schema.org/WebPage">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>{% if yaml.SeoTitle is not empty %}{{ yaml.SeoTitle }} | {% elseif yaml.Title is not empty %}{{ yaml.Title }} | {% endif %}BuzzingPixel</title>
+
+	{% if yaml.SeoDescription is not empty %}
+		<meta name="description" content="{{ yaml.SeoDescription }}">
+	{% endif %}
+
+	{% if yaml.SeoNoIndex == true %}
+		<meta name="robots" content="noindex, follow">
+	{% endif %}
+
+	<link rel="canonical" href="https://buzzingpixel.com/{{ uri.path }}">
+
+	<link rel="apple-touch-icon" href="/touchicon.png">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="buzzingpixel">
+
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="BuzzingPixel">
+	<meta property="og:url" content="https://buzzingpixel.com/{{ uri.path }}" itemprop="url">
+	{% if yaml.Title is not empty %}
+		<meta property="og:title" content="{{ yaml.Title }}" itemprop="name">
+	{% endif %}
+
+	{% if yaml.SeoDescription is not empty %}
+		<meta property="og:description" content="{{ yaml.SeoDescription }}" itemprop="description">
+	{% endif %}
+
+	<meta property="og:image" content="{{ shareImage|default('/share.png') }}" itemprop="image">
+
+	<link rel="stylesheet" href="/assets/css/style.min.css">
+</head>
+<body>
+	{# Content Wrappers #}
+	<div class="site-wrapper">
+		<div class="site-inner">
+
+			{# Header #}
+			{% set headerBackground = block('headerBackground') %}
+			{% set headerContent = block('headerContent') %}
+			{% set pageTitle = block('pageTitle') %}
+			{% set pageSubTitle = block('pageSubTitle') %}
+			{% set additionalHeaderContent = block('additionalHeaderContent') %}
+			{%- include "_partials/header.twig" -%}
+
+			{# Content #}
+			<div class="site-content {{ contentClass }}">
+				{{- block('content') -}}
+			</div>
+
+			{# Footer #}
+			{%- include "_partials/footer.twig" -%}
+
+		</div>
+	</div>
+
+	{# Primary scripts #}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/assets/js/lib/jQuery-2.1.4.min.js">\x3C/script>')</script>
+	<script src="/assets/js/script.min.js"></script>
+</body>
+</html>
+{% endspaceless %}

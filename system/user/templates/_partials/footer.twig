@@ -1,0 +1,21 @@
+<footer class="site-footer" role="contentinfo">
+	<div class="container site-footer__container">
+		<a href="/" rel="home" class="site-footer__logo-link">
+			<img src="/assets/img/header/logo.png" class="site-footer__logo-img">
+		</a>
+		<div class="site-footer__info">
+			<nav class="site-footer__nav">
+				<ul>
+					{% for item in nav %}
+						<li class="site-footer__navigation-list-item">
+							<a href="{{ item.link }}" class="site-footer__navigation-link">
+								{{- item.title -}}
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</nav>
+			<small class="site-footer__copyright">&copy; {{ "now"|date("Y") }} BuzzingPixel, LLC</small>
+		</div>
+	</div>
+</footer>

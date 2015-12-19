@@ -1,0 +1,71 @@
+<header class="site-header{% if headerModifier %} site-header--{{ headerModifier }}{% endif %}" role="banner">
+	{# Mobile Hamburger #}
+	<span class="site-header__hamburger" data-ref="hamburger"></span>
+
+	{# Header Logo #}
+	<div class="site-header__logo">
+		<a href="/" rel="home" class="site-header__logo-link">
+			<img src="/assets/img/header/logo.png" class="site-header__logo-img">
+		</a>
+	</div>
+
+	{# Primary Nav #}
+	<nav class="site-header__navigation" role="navigation">
+		<ul class="site-header__navigation-list">
+			{% for item in nav %}
+				<li class="site-header__navigation-list-item">
+					<a href="{{ item.link }}" class="site-header__navigation-link">
+						{{- item.title -}}
+					</a>
+					{% if item.subnav|length %}
+						<ul class="site-header__navigation-sub-list">
+							{% for subnav in item.subnav %}
+								<li class="site-header__navigation-sub-list-item">
+									<a href="{{ subnav.link }}" class="site-header__navigation-sub-link">
+										{{- subnav.title -}}
+									</a>
+								</li>
+							{% endfor %}
+						</ul>
+					{% endif %}
+				</li>
+			{% endfor %}
+		</ul>
+	</nav>
+
+	{# Header Background #}
+	<div class="site-header__hero-background"{% if headerBackground %} style="background-image:url({{ headerBackground }});"{% endif %}>
+	</div>
+
+	{# Header Content #}
+	{{ headerContent }}
+	<div class="site-header__content{% if headerContent is empty %} site-header__content--not-home{% endif %}">
+		<div class="container">
+			{% if headerContent or pageTitle %}
+				<div class="site-header__content-inner">
+
+					{# Set Specific Header Content if Applicable #}
+					{% if headerContent %}
+						{{ headerContent }}
+
+					{# Set General Header Content if else #}
+					{% else %}
+						<h1 class="site-header__heading">
+							{{ pageTitle }}
+						</h1>
+						{% if pageSubTitle %}
+							<h2 class="site-header__subheading">
+								{{ pageSubTitle }}
+							</h2>
+						{% endif %}
+						{% if additionalHeaderContent %}
+							<p class="site-header__additional">
+								{{ additionalHeaderContent }}
+							</p>
+						{% endif %}
+					{% endif %}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+</header>
