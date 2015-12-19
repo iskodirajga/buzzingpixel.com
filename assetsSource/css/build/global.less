@@ -1,0 +1,192 @@
+// Imports
+@import (reference) '../base/variables';
+@import (reference) '../config/variables';
+@import (reference) '../base/mixins.less';
+@import (reference) '../config/mixins';
+
+/*------------------------------------*\
+	# Code in Headings
+\*------------------------------------*/
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	code {
+		.align(middle);
+		.inline-block();
+	}
+}
+h2 {
+	code {
+		.font-size(@h2);
+	}
+}
+h3 {
+	code {
+		.font-size(@h3);
+	}
+}
+h4 {
+	code {
+		.font-size(@h4);
+	}
+}
+h5 {
+	code {
+		.font-size(@h5);
+	}
+}
+h6 {
+	code {
+		.font-size(@h6);
+	}
+}
+
+
+
+
+
+/*------------------------------------*\
+	# Forms and Buttons
+\*------------------------------------*/
+
+.input,
+.textarea,
+.select {
+	outline: none;
+	.border(@inputBorderColor; @inputBorderWidth);
+	.background(@inputBackground);
+	.color(@inputColor);
+	.fill();
+	.font(@inputFont; @inputFontSize);
+	.rounded(@inputRounded);
+	.min-height(@inputMinHeight);
+	.min-width(@inputMinWidth);
+	.padding(@inputPaddingVertical; @inputPaddingHorizontal);
+	.spaced(@inputMarginBottom);
+	&:hover {
+		.border-color(@inputBorderColorHover);
+	}
+	&:focus {
+		.border-color(@inputBorderColorFocus);
+	}
+	&::-webkit-input-placeholder {
+		.color(@inputPlaceholderColor);
+	}
+	&:-moz-placeholder { /* Firefox 18- */
+		.color(@inputPlaceholderColor);
+	}
+	&::-moz-placeholder {  /* Firefox 19+ */
+		.color(@inputPlaceholderColor);
+	}
+	&:-ms-input-placeholder {
+		.color(@inputPlaceholderColor);
+	}
+	&:disabled {
+		.background(@inputBackgroundDisabled);
+		.color(@inputColorDisabled);
+		.cursor(@inputCursorDisabled);
+	}
+	&__inline {
+		.inline-block();
+		.margin(right; 6px);
+		.width(auto);
+	}
+}
+.textarea {
+	.line-height(@textareaLineHeight);
+	.min-height(@textareaMinHeight);
+	.padding(@textareaPaddingVertical; @textareaPaddingHorizontal);
+	.resize(@textareaResize);
+}
+.label {
+	.block();
+	.font-weight(@labelFontWeight);
+	.line-height(@labelLineHeight);
+	.margin(right; @labelMarginRight);
+	.spaced(@labelMarginBottom);
+	&__inline {
+		.inline-block();
+	}
+}
+.button {
+	-webkit-tap-highlight-color: @buttonColor;
+	.align(center);
+	.background(@buttonBackground);
+	.border(@buttonBorderColor);
+	.color(@buttonColor);
+	.cursor();
+	.font(@buttonFont; @buttonFontSize; @buttonFontWeight; 1em);
+	.inline-block();
+	.margin(bottom; @buttonMarginBottom);
+	.padding(@buttonPaddingVertical; @buttonPaddingHorizontal);
+	.rounded(@buttonRounded);
+	.user-select();
+	.text-decoration(none);
+	.text-shadow(none);
+	&:hover {
+		.background(@buttonBackgroundHover);
+		.color(@buttonColor);
+		.text-decoration(none);
+	}
+	&:active {
+		.background(@buttonBackgroundActive);
+	}
+	.check () when(@buttonBorderColor = false) {
+		.border(0);
+	}
+	.check () when(@buttonTransitionEnabled = true) {
+		.transition(all);
+	}
+	.check();
+	&--colored {
+		.background(@coloredButtonBackground);
+		.border-color(@coloredButtonBorderColor);
+		.color(@coloredButtonColor);
+		&:hover {
+			.background(@coloredButtonBackgroundHover);
+		}
+		&:active {
+			.background(@coloredButtonBackgroundActive);
+		}
+	}
+	&--rounded {
+		.rounded(100px);
+		&--hollow {
+			.border(@buttonBackground; 2px);
+			.background(none);
+			.color(@buttonBackground);
+			&:hover {
+				.background(@buttonBackground);
+				.color(@buttonColor);
+			}
+			&.button--colored {
+				.border-color(@coloredButtonBackground);
+				.color(@coloredButtonBackground);
+				&:hover {
+					.background(@coloredButtonBackground);
+					.color(@coloredButtonColor);
+				}
+			}
+		}
+	}
+	&:disabled,
+	&--disabled {
+		.background(@disabledButtonBackground) !important;
+		.border-color(@disabledButtonBorderColor) !important;
+		.color(@disabledButtonColor) !important;
+		.cursor(@disabledButtonCursor) !important;
+		&:hover {
+			.background(@disabledButtonBackground) !important;
+			.border-color(@disabledButtonBorderColor) !important;
+			.color(@disabledButtonColor) !important;
+			.cursor(@disabledButtonCursor) !important;
+		}
+	}
+}
+.input-error {
+	.background(#c85959);
+	.color(@white);
+}
