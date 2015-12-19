@@ -34,7 +34,7 @@
 	</nav>
 
 	{# Header Background #}
-	<div class="site-header__hero-background js-hero"{% if headerBackground %} style="background-image:url({{ headerBackground }});"{% endif %}>
+	<div class="site-header__hero-background js-hero"{% if headerBackground %} style="background-image:url({{ headerBackground }});"{% elseif yaml.HeaderBackgroundImage %} style="background-image:url({{ yaml.HeaderBackgroundImage }});"{% endif %}>
 	</div>
 
 	{# Header Content #}
@@ -50,16 +50,16 @@
 					{# Set General Header Content if else #}
 					{% else %}
 						<h1 class="site-header__heading">
-							{{ pageTitle }}
+							{{- pageTitle -}}
 						</h1>
 						{% if pageSubTitle %}
 							<h2 class="site-header__subheading">
-								{{ pageSubTitle }}
+								{{- pageSubTitle -}}
 							</h2>
 						{% endif %}
 						{% if additionalHeaderContent %}
 							<p class="site-header__additional">
-								{{ additionalHeaderContent }}
+								{{- additionalHeaderContent -}}
 							</p>
 						{% endif %}
 					{% endif %}
