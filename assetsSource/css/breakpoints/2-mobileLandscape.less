@@ -1,0 +1,46 @@
+/*------------------------------------*\
+	# Set padding for breakpoint
+\*------------------------------------*/
+
+@bumperPadding: 20px;
+.container {
+	.padding(horizontal; @bumperPadding);
+}
+
+
+
+
+
+/*------------------------------------*\
+	# Site Footer
+\*------------------------------------*/
+
+.site-footer {
+	&__logo-link,
+	&__info {
+		.align(top);
+		.inline-block();
+		.margin(vertical; 0);
+		.margin(horizontal; 10px);
+	}
+	&__navigation-list-item {
+		.inline-block();
+	}
+	&__navigation-link {
+		.padding(12px);
+	}
+}
+
+
+
+
+
+/*------------------------------------*\
+	# Software Page
+\*------------------------------------*/
+
+.software-page {
+	&__content-block-inner {
+		.container();
+	}
+}

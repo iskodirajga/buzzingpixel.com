@@ -1,0 +1,51 @@
+/*------------------------------------*\
+ * # Icons
+\*------------------------------------*/
+
+.icon (@icon; @size: inherit; @rotate: false) {
+	font-variant: normal;
+	speak: none;
+	.content(@icon);
+	.font('icons'; @size; normal; inherit; normal);
+	.inline-block();
+	.line-height(1em);
+	.text-sharpen();
+	.test () when not(@rotate = false) {
+		.rotate(@rotate);
+	}
+	.test();
+}
+.icon-modify (@icon; @size: false; @rotate: false) {
+	.content(@icon);
+	.test () when not(@size = false) {
+		.font-size(@size);
+	}
+	.test () when not(@rotate = false) {
+		.rotate(@rotate);
+	}
+	.test();
+}
+
+
+
+
+
+/*------------------------------------*\
+	# Inline Block Column Mixin
+\*------------------------------------*/
+
+.column-inline (...) {
+	.inline-block();
+}
+.column-inline (@width: 100%) when not (isunit(@width, '')) {
+	width: @width;
+}
+.column-inline (@share; @columns: @gridColumns; @align: top) when (isunit(@share, '')) {
+	width: ((100% / @columns) * @share);
+	vertical-align: @align;
+}
+.column-inline (spaced; @share; @columns: @gridColumns; @margin: @gridMargin; @align: top) {
+	margin-left: @margin;
+	width: (((100% / @columns) * @share) - (@margin));
+	vertical-align: @align;
+}
