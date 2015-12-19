@@ -3,6 +3,9 @@
 	"assets": "assets",
 	"source": "assetsSource",
 	"proxy": "https://buzzingpixel.dev",
+	"watch": [
+		"system/user/**"
+	],
 	"lessCompress": true,
 	"lessBuild": [
 	],
