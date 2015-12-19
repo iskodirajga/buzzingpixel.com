@@ -14,7 +14,7 @@
 		<ul class="site-header__navigation-list">
 			{% for item in nav %}
 				<li class="site-header__navigation-list-item js-menu-parent" data-name="{{ item.link|trim("/")|default("home") }}">
-					<a href="{{ item.link }}" class="site-header__navigation-link{% if ["/", uri.path]|join == item.link %} site-header__navigation-link--active{% endif %}">
+					<a href="{{ item.link }}" class="site-header__navigation-link{% if ["/", uri.segments[0]]|join == item.link %} site-header__navigation-link--active{% endif %}">
 						{{- item.title -}}
 					</a>
 					{% if item.subnav|length %}
