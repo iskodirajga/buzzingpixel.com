@@ -24,6 +24,7 @@ public_html/cache/*
 	# Tools
 #------------------------------------
 
+node_modules
 .bundle
 .idea/
 .komodotools

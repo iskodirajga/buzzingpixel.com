@@ -1,0 +1,15 @@
+{
+	"root": "public_html",
+	"assets": "assets",
+	"source": "assetsSource",
+	"proxy": "https://buzzingpixel.dev",
+	"lessCompress": true,
+	"lessBuild": [
+	],
+	"lessFiles": {
+	},
+	"jsBuild": [
+	],
+	"jsFiles": {
+	}
+}
