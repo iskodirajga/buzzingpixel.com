@@ -1,1 +1,15 @@
-entry
+{% extends "_layouts/master.twig" %}
+
+{# Set the content class #}
+{% set contentClass = "software-docs-page" %}
+
+{# Set content #}
+{%- block content -%}
+	<div class="site-inner-content">
+		<div class="container software-index__item-inner">
+			<a href="/news" class="previous-page">&laquo; All News</a>
+			<h2>{{ yaml.Title }}</h2>
+			{{ body|raw }}
+		</div>
+	</div>
+{%- endblock -%}

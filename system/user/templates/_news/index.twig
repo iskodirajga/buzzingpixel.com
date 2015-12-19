@@ -28,7 +28,6 @@
 
 	{# Loop over the content #}
 	{% for entry in news %}
-		{# {{ dump(entry, true) }} #}
 		<div class="site-inner-content software-index__item software-index__item--{% if loop.index is odd %}odd{% else %}even{% endif %}">
 			<div class="container software-index__item-inner">
 				<h2><a href="/news/{{ entry.slug }}">{{ entry.Title }}</a></h2>
