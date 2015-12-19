@@ -2,39 +2,63 @@
 <!doctype html>
 <html lang="en" id="global" itemscope itemtype="http://schema.org/WebPage">
 <head>
+	{# Enable Responsive #}
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	{# Set a page title #}
 	<title>{% if yaml.SeoTitle is not empty %}{{ yaml.SeoTitle }} | {% elseif yaml.Title is not empty %}{{ yaml.Title }} | {% endif %}BuzzingPixel</title>
 
+	{# Set the page description #}
 	{% if yaml.SeoDescription is not empty %}
 		<meta name="description" content="{{ yaml.SeoDescription }}">
 	{% endif %}
 
+	{# Control page indexing #}
 	{% if yaml.SeoNoIndex == true %}
 		<meta name="robots" content="noindex, follow">
 	{% endif %}
 
+	{# Set the canonical URL #}
 	<link rel="canonical" href="https://buzzingpixel.com/{{ uri.path }}">
 
+	{# Let Apple devices know about the icon #}
 	<link rel="apple-touch-icon" href="/touchicon.png">
 
+	{# Set basic Twitter Card params #}
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="buzzingpixel">
 
+	{# Set open graph data #}
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="BuzzingPixel">
 	<meta property="og:url" content="https://buzzingpixel.com/{{ uri.path }}" itemprop="url">
 	{% if yaml.Title is not empty %}
 		<meta property="og:title" content="{{ yaml.Title }}" itemprop="name">
 	{% endif %}
-
 	{% if yaml.SeoDescription is not empty %}
 		<meta property="og:description" content="{{ yaml.SeoDescription }}" itemprop="description">
 	{% endif %}
-
 	<meta property="og:image" content="{{ shareImage|default('/share.png') }}" itemprop="image">
 
+	{# Include the primary stylesheet #}
 	<link rel="stylesheet" href="/assets/css/style.min.css">
+
+	{# Include TypeKit #}
+	<script src="//use.typekit.net/txd0vvo.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+
+	{# Include tracking code #}
+	{% if env == "prod" %}
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-7579302-6', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	{% endif %}
 </head>
 <body>
 	{# Content Wrappers #}
