@@ -1,0 +1,54 @@
+{% extends "_layouts/master.twig" %}
+
+{# Get our news listings and set it to a variable #}
+{% set news = listing({
+	path: uri.segments[0],
+	limit: 6,
+	offset: (uri.page - 1) * 6
+}) %}
+
+{# Get the total news listings #}
+{% set newsRemainingTotal = listingTotal({
+	path: uri.segments[0],
+	offset: (uri.page) * 6
+}) %}
+
+{# Set the page title #}
+{%- block pageTitle -%}{{ yaml.Title }}{%- endblock -%}
+
+{# Set the content class #}
+{% set contentClass = "software-docs-page" %}
+
+{# Set content #}
+{%- block content -%}
+	{# Send 404 if no results (invalid pagination) #}
+	{% if news|length < 1 %}
+		{{ set404() }}
+	{% endif %}
+
+	{# Loop over the content #}
+	{% for entry in news %}
+		{# {{ dump(entry, true) }} #}
+		<div class="site-inner-content software-index__item software-index__item--{% if loop.index is odd %}odd{% else %}even{% endif %}">
+			<div class="container software-index__item-inner">
+				<h2><a href="/news/{{ entry.slug }}">{{ entry.Title }}</a></h2>
+				{{ entry.body|raw }}
+			</div>
+		</div>
+	{% endfor %}
+
+	{% if newsRemainingTotal > 0 or uri.page > 1 %}
+		<div class="site-inner-content">
+			<div class="container software-index__item-inner">
+				<div class="pagination">
+					{% if uri.page > 1 %}
+						<a href="/{{ uri.path }}{% if uri.page - 1 > 1 %}/page/{{ uri.page - 1 }}{% endif %}" class="button button--rounded button--rounded--hollow pagination__prev">&laquo; Newer Entries</a>
+					{% endif %}
+					{% if newsRemainingTotal > 0 %}
+						<a href="/{{ uri.path }}/page/{{ uri.page + 1 }}" class="button button--rounded button--rounded--hollow pagination__next">Older Entries &raquo;</a>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	{% endif %}
+{%- endblock -%}
