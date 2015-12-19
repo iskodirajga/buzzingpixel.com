@@ -1,7 +1,15 @@
 (function(F) {
 	'use strict';
 
+	/**
+	 * Hero paralax controller
+	 */
 	F.fn.make('heroParallax', {
+		/**
+		 * Constructor
+		 *
+		 * This constructor runs on page load and sets up hero paralax
+		 */
 		_construct: function() {
 			var divider = 2.5;
 			var $win = $(window);
