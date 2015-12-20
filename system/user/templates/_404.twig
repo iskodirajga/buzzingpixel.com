@@ -1,1 +1,15 @@
-404 template placeholder
+{% extends "_layouts/master.twig" %}
+
+{%- block headerBackground -%}/assets/img/banners/404.jpg{%- endblock -%}
+
+{# Set the page title #}
+{% set SeoTitle = "Page Not Found" %}
+{%- block pageTitle -%}Houston, We Have a Slight Problem{%- endblock -%}
+
+{# Set the page subtitle #}
+{%- block pageSubTitle -%}That page cannot be found{%- endblock -%}
+
+{# Set content #}
+{%- block content -%}
+	<div class="site-content 404-page"><div class="container site-inner-content contact"><p>One or more of the robots running this site appears to have a fried circuit. We hate that you have to see the exposed parts. If you would, just use the menu in the header above at the top of the page to get on out of this mess.</p></div></div>
+{%- endblock -%}
