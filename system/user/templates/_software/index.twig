@@ -1,0 +1,24 @@
+{% extends "_layouts/master.twig" %}
+
+{# Set the page title #}
+{%- block pageTitle -%}{{ yaml.Title }}{%- endblock -%}
+
+{# Set the content class #}
+{% set contentClass = "software-index" %}
+
+{# Set content #}
+{%- block content -%}
+	{% for addon in nav["ee-add-ons"].subnav %}
+		{% set addonContent = content(addon.link|trim("/")) %}
+		<div class="site-inner-content software-index__item software-index__item--{% if loop.index is odd %}odd{% else %}even{% endif %}">
+			<div class="container software-index__item-inner">
+				<div class="software-index__screenshot software-index__screenshot--odd" style="background-image:url({{ addonContent.yaml.ListingImage }});"></div>
+				<div class="software-index__content software-index__content--odd">
+					<h2 class="software-index__title">{{ addonContent.yaml.Title }}</h2>
+					<div class="software-index__text"><p>{{ addonContent.yaml.ListingText }}</p></div>
+					<a href="{{ addon.link }}" class="button button--rounded button--rounded--hollow software-index__button">Learn more about {{ addonContent.yaml.SoftwareTitle }} &raquo;</a>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+{%- endblock -%}
