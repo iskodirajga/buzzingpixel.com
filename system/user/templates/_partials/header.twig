@@ -21,7 +21,7 @@
 						<ul class="site-header__navigation-sub-list js-menu-child">
 							{% for subnav in item.subnav %}
 								<li class="site-header__navigation-sub-list-item">
-									<a href="{{ subnav.link }}" class="site-header__navigation-sub-link{% if ["/", uri.path]|join == subnav.link %} site-header__navigation-sub-link--active{% endif %}">
+									<a href="{{ subnav.link }}" class="site-header__navigation-sub-link{% if ["/", uri.segments[0]]|join == item.link and ["/", uri.segments[0], "/", uri.segments[1]]|join == subnav.link %} site-header__navigation-sub-link--active{% endif %}">
 										{{- subnav.title -}}
 									</a>
 								</li>
