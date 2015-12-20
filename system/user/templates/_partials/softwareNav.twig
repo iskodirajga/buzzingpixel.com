@@ -1,0 +1,11 @@
+<nav class="container site-inner-content software-page__nav">
+	<ul class="software-page__nav-list">
+		{% for nav in nav[uri.segments[0]].subnav[uri.segments[1]].subnav %}
+			<li class="software-page__nav-list-item">
+				<a href="{{ nav.link }}" class="software-page__nav-link{% if ["/", uri.path]|join == nav.link %} software-page__nav-link--active{% endif %}">
+					{{ nav.title }}
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+</nav>

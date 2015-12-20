@@ -1,0 +1,11 @@
+<div class="container site-inner-content software-page__top-buttons">
+	<a href="{{ yaml.ActionLink }}" class="button button--rounded button--rounded--hollow software-page__button{% if yaml.PreRelease %} coming-soon-parent js-coming-soon-btn{% endif %}">
+		{% if yaml.PreRelease %}
+			<div class="coming-soon js-coming-soon-inner">
+				<div class="coming-soon__heading">Coming soon!</div>
+				Keep your eyes open for the release!
+			</div>
+		{% endif %}
+		{{ yaml.ActionText }}
+	</a>
+</div>

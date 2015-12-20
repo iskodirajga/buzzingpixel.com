@@ -1,0 +1,59 @@
+{% extends "_layouts/master.twig" %}
+
+{# Set the page title #}
+{%- block pageTitle -%}{{ yaml.SoftwareTitle }}{%- endblock -%}
+
+{# Set the page subtitle #}
+{%- block pageSubTitle -%}{{ yaml.SubTitle }}{%- endblock -%}
+
+{# Set the header text #}
+{%- block additionalHeaderContent -%}{{ yaml.HeaderText }}{%- endblock -%}
+
+{# Set the content class #}
+{% set contentClass = "software-page" %}
+
+{# Set content #}
+{%- block content -%}
+	{# Include the software navigation #}
+	{%- include "_partials/softwareNav.twig" -%}
+
+	{# Action button #}
+	{%- include "_partials/softwareActionButton.twig" -%}
+
+	{# Content segments #}
+	{% for item in yaml.Segments %}
+		<div class="site-inner-content software-page__content-block{% if loop.index is even %} software-page__content-block--even{% endif %}{% if loop.index == 0 %} software-page__content-block--first{% endif %}{% if item.image %} software-page__content-block--has-image{% endif %}">
+			{% if item.image %}
+			<div class="software-page__floating-image-wrapper">
+			{% endif %}
+				<div class="software-page__content-block-inner{% if item.image %} software-page__content-block-inner--has-image{% endif %}">
+					{% if item.image %}
+						<div class="software-page__content-floating-image software-page__content-floating-image--{% if loop.index is odd %}odd{% else %}even{% endif %}">
+							<img src="{{ item.image }}" alt="{{ item.heading }}">
+						</div>
+					{% endif %}
+					<div class="software-page__content-block-body{% if item.image %} software-page__content-block-body--has-image software-page__content-block-body--has-image--{% if loop.index is odd %}odd{% else %}even{% endif %}{% endif %}">
+						{% if item.heading %}
+							<h2 class="software-page__content-heading">
+								{{ item.heading }}
+							</h2>
+						{% endif %}
+						<p>{{ item.text }}</p>
+					</div>
+				</div>
+			{% if item.image %}
+			</div>
+			{% endif %}
+		</div>
+	{% endfor %}
+
+	{# Final Call #}
+	<div class="site-inner-content software-page__content-block software-page__content-block--buttons">
+		<div class="software-page__content-block-inner">
+			<div class="software-page__content-block-body software-page__content-block-body--buttons">
+				<p>{{ yaml.FinalCallText }}</p>
+			</div>
+			{%- include "_partials/softwareActionButton.twig" -%}
+		</div>
+	</div>
+{%- endblock -%}
