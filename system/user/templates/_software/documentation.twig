@@ -1,0 +1,100 @@
+{% extends "_layouts/master.twig" %}
+
+{# Set the page title #}
+{%- block pageTitle -%}{{ yaml.Title }}{%- endblock -%}
+
+{# Set the content class #}
+{% set contentClass = "software-docs-page" %}
+
+{# Get the documentation content #}
+{% set docs = indexedContent({
+	path: [uri.segments[0], "/", uri.segments[1], "/", uri.segments[2], "/sections"]|join,
+	topLevelDirectories: true
+}) %}
+
+{# Set page items #}
+{% if uri.segments[3] is null %}
+	{% set pageItems = (docs|first).IndexedContent %}
+{% else %}
+	{% set pageItems = docs[uri.segments[3]].IndexedContent %}
+{% endif %}
+
+{# Set content #}
+{%- block content -%}
+	{# Include the software navigation #}
+	{%- include "_partials/softwareNav.twig" -%}
+
+	{# {{ dump(pageItems) }} #}
+	{# {{ dump(docs) }}
+	{{ dump((docs|first).IndexedContent) }} #}
+
+	{# Content container #}
+	<div class="container site-inner-content software-docs-blocks">
+		<div class="software|first-docs-blocks__inner-wrapper">
+
+			{# Content nav #}
+			<div class="software-docs-blocks__nav-wrapper">
+				<div class="software-docs-blocks__nav-wrapper-inner">
+
+					{# Doc sections #}
+					<nav class="software-docs-blocks__nav">
+						<div class="software-docs-blocks__nav-heading">Doc Sections</div>
+						<ul class="software-docs-blocks__nav-list">
+							{% for item in docs %}
+								<li class="software-docs-blocks__nav-item">
+									<a href="/{{ uri.segments[0] }}/{{ uri.segments[1] }}/{{ uri.segments[2] }}{% if loop.index > 1 %}/{{ item.slug }}{% endif %}" class="software-docs-blocks__nav-link{% if (loop.index == 1 and uri.segments[3] is null) or uri.segments[3] == item.slug %} software-docs-blocks__nav-link--active{% endif %}">
+										{{ item.Title }}
+									</a>
+								</li>
+							{% endfor %}
+						</ul>
+					</nav>
+
+					{# Page sections #}
+					<nav clas="software-docs-blocks__nav software-docs-blocks__nav--page">
+						<div class="software-docs-blocks__nav-heading">Page Sections</div>
+						<ul class="software-docs-blocks__nav-list">
+							{% for item in pageItems %}
+								<li class="software-docs-blocks__nav-item">
+									<a href="#{{ item.slug }}" class="software-docs-blocks__nav-link">
+										{{ item.Title }}
+									</a>
+								</li>
+							{% endfor %}
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div class="content-blocks software-docs-blocks__content">
+				{% for item in pageItems %}
+					{% if item.FloatingImage %}
+						<div class="content-blocks__image content-blocks__image--{{ item.FloatingImageSide|default("right") }}-thumbnail">
+							<img
+								src="{{ item.FloatingImage }}"
+								width="400"
+								class="content-blocks__image-thumb-img"
+							>
+						</div>
+					{% endif %}
+					<h2 id="{{ item.slug }}" class="content-blocks__heading software-docs-blocks__heading">
+						<a href="#{{ item.slug }}" class="software-docs-blocks__heading-anchor-link">#</a>
+						{{ item.Title }}
+					</h2>
+					<div class="content-blocks__body-content">
+						{{ item.body|raw }}
+					</div>
+					{% if item.EndNote %}
+						<div class="content-blocks__note">
+							<div class="content-blocks__note-title">Note</div>
+							<p>{{ item.EndNote }}</p>
+						</div>
+					{% endif %}
+					{% if not loop.last %}
+						<hr class="content-blocks__section-divider">
+					{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+{%- endblock -%}
