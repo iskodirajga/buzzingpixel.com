@@ -4,6 +4,38 @@
 @import (reference) '../base/mixins.less';
 @import (reference) '../config/mixins';
 
+
+
+
+
+/*------------------------------------*\
+	# Code
+\*------------------------------------*/
+
+code, kbd, samp {
+	.background(#e6e6e6);
+	.background-clip(border-box);
+	.color(#404040);
+	.font-family(monospace);
+	.font-size(17px, 1.4em);
+	.padding(.2em; .5em; .2em; .5em);
+	.rounded(3px);
+}
+pre code {
+	background: rgb(39, 40, 34);
+	white-space: pre;
+	.block();
+	.color(#f2f2f2);
+	.font-family(monospace);
+	.font-size(13px);
+	.overflow(auto);
+	.padding(20px; 20px; 20px; 20px);
+}
+
+
+
+
+
 /*------------------------------------*\
 	# Code in Headings
 \*------------------------------------*/
