@@ -2,7 +2,7 @@
 	<ul class="software-page__nav-list">
 		{% for nav in nav[uri.segments[0]].subnav[uri.segments[1]].subnav %}
 			<li class="software-page__nav-list-item">
-				<a href="{{ nav.link }}" class="software-page__nav-link{% if ["/", uri.segments[0], "/", uri.segments[1], "/", uri.segments[2]]|join == nav.link %} software-page__nav-link--active{% endif %}">
+				<a href="{{ nav.link }}" class="software-page__nav-link{% if ["/", uri.segments[0], "/", uri.segments[1], "/", uri.segments[2]]|join == nav.link or (uri.segments[2] is empty and ["/", uri.segments[0], "/", uri.segments[1]]|join == nav.link) %} software-page__nav-link--active{% endif %}">
 					{{ nav.title }}
 				</a>
 			</li>
