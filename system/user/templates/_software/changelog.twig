@@ -1,0 +1,101 @@
+{% extends "_layouts/master.twig" %}
+
+{# Set the page title #}
+{%- block pageTitle -%}{{ yaml.Title }}{%- endblock -%}
+
+{# Set the content class #}
+{% set contentClass = "software-docs-page" %}
+
+{# Set the page limit #}
+{% set pageLimit = 6 %}
+
+{# Set changelog path #}
+{% set changelogPath = [uri.segments[0], '/', uri.segments[1], '/', uri.segments[2]]|join %}
+
+{# Get all changelog items #}
+{% set changlogAll = listing({
+	path: changelogPath
+}) %}
+
+{# Get our changelog listings and set it to a variable #}
+{% set changelogLimited = listing({
+	path: changelogPath,
+	limit: pageLimit,
+	offset: (uri.page - 1) * pageLimit
+}) %}
+
+{# Get the remaining total changelog listings #}
+{% set changelogRemainingTotal = listingTotal({
+	path: changelogPath,
+	offset: (uri.page) * pageLimit
+}) %}
+
+{# Set content #}
+{%- block content -%}
+	{# Send 404 if no results (invalid pagination) #}
+	{% if changelogLimited|length < 1 %}
+		{{ set404() }}
+	{% endif %}
+
+	{# Include the software navigation #}
+	{%- include "_partials/softwareNav.twig" -%}
+
+	{# Content container #}
+	<div class="container site-inner-content software-docs-blocks">
+		<div class="software|first-docs-blocks__inner-wrapper">
+
+			{# Content nav #}
+			{%- include "_partials/changelog-nav.twig" -%}
+
+			{# Content #}
+			<div class="software-docs-blocks__content changelog">
+
+				{% for item in changelogLimited %}
+					<div class="changelog__entry">
+						<div class="changelog__row">
+							<div class="changelog__left-col">
+								<div class="changelog__version">
+									<span class="changelog__version-indicator changelog__version-indicator">
+										Version:
+									</span>
+									<a href="/{{ uri.segments[0] }}/{{ uri.segments[1] }}/{{ uri.segments[2] }}/{{ item.slug }}">
+										{{ item.Version }}
+									</a>
+								</div>
+								<div class="changelog__release-date">
+									<span class="changelog__release-date-indicator">
+										Released:
+									</span>
+								{{ item.monthShort }}-{{ item.dayShort }}-{{ item.year }}
+								</div>
+							</div>
+							<div class="changelog__right-col">
+								{{ item.body|raw }}
+							</div>
+						</div>
+					</div>
+					{% if not loop.last %}
+						<hr class="content-blocks__section-divider">
+					{% endif %}
+				{% endfor %}
+
+				{% if changelogRemainingTotal > 0 or uri.page > 1 %}
+					<div class="site-inner-content">
+						<div class="container software-index__item-inner">
+							<div class="pagination">
+								{% if uri.page > 1 %}
+									<a href="/{{ uri.path }}{% if uri.page - 1 > 1 %}/page/{{ uri.page - 1 }}{% endif %}" class="button button--rounded button--rounded--hollow pagination__prev">&laquo; Newer Entries</a>
+								{% endif %}
+								{% if changelogRemainingTotal > 0 %}
+									<a href="/{{ uri.path }}/page/{{ uri.page + 1 }}" class="button button--rounded button--rounded--hollow pagination__next">Older Entries &raquo;</a>
+								{% endif %}
+							</div>
+						</div>
+					</div>
+				{% endif %}
+
+			</div>
+
+		</div>
+	</div>
+{%- endblock -%}

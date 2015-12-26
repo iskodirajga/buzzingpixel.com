@@ -1,0 +1,57 @@
+{% extends "_layouts/master.twig" %}
+
+{# Set the header background #}
+{%- block headerBackground -%}{{ listingParentYaml.HeaderBackgroundImage }}{%- endblock -%}
+
+{# Set the page title #}
+{%- block pageTitle -%}{{ listingParentYaml.Title }} {{ yaml.Version }}{%- endblock -%}
+
+{# Set changelog path #}
+{% set changelogPath = [uri.segments[0], '/', uri.segments[1], '/', uri.segments[2]]|join %}
+
+{# Get all changelog items #}
+{% set changlogAll = listing({
+	path: changelogPath
+}) %}
+
+{# Set content #}
+{%- block content -%}
+	{# Include the software navigation #}
+	{%- include "_partials/softwareNav.twig" -%}
+
+	{# Content container #}
+	<div class="container site-inner-content software-docs-blocks">
+		<div class="software|first-docs-blocks__inner-wrapper">
+
+			{# Content nav #}
+			{%- include "_partials/changelog-nav.twig" -%}
+
+			{# Content #}
+			<div class="software-docs-blocks__content changelog">
+				<div class="changelog__entry">
+					<div class="changelog__row">
+						<div class="changelog__left-col">
+							<a href="/{{ uri.segments[0] }}/{{ uri.segments[1] }}/{{ uri.segments[2] }}" class="previous-page">&laquo; All Changlog Items</a>
+							<div class="changelog__version">
+								<span class="changelog__version-indicator changelog__version-indicator">
+									Version:
+								</span>
+								{{ yaml.Version }}
+							</div>
+							<div class="changelog__release-date">
+								<span class="changelog__release-date-indicator">
+									Released:
+								</span>
+							{{ meta.monthShort }}-{{ meta.dayShort }}-{{ meta.year }}
+							</div>
+						</div>
+						<div class="changelog__right-col">
+							{{ body|raw }}
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+{%- endblock -%}
