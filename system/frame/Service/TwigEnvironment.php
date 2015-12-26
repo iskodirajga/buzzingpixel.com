@@ -75,9 +75,15 @@ class TwigEnvironment
 	private function loadFilters($twig)
 	{
 		global $sysDir;
+		global $userDir;
 
 		$path = $sysDir . '/TwigFilters/';
 		$filters = Helper\DirArray::directories($path);
+
+		$userPath = $userDir . '/TwigFilters/';
+		$userFilters = Helper\DirArray::directories($userPath);
+
+		$filters = array_merge($filters, $userFilters);
 
 		$namespace = array(
 			'\Frame',
@@ -85,7 +91,10 @@ class TwigEnvironment
 		);
 
 		foreach ($filters as $filterName) {
-			if (! is_dir($path . $filterName)) {
+			if (
+				! is_dir($path . $filterName) AND
+				! is_dir($userPath . $filterName)
+			) {
 				continue;
 			}
 
@@ -117,9 +126,15 @@ class TwigEnvironment
 	public function loadFunctions($twig)
 	{
 		global $sysDir;
+		global $userDir;
 
 		$path = $sysDir . '/TwigFunctions/';
 		$functions = Helper\DirArray::directories($path);
+
+		$userPath = $userDir . '/TwigFunctions/';
+		$userFunctions = Helper\DirArray::directories($userPath);
+
+		$functions = array_merge($functions, $userFunctions);
 
 		$namespace = array(
 			'\Frame',
@@ -127,7 +142,10 @@ class TwigEnvironment
 		);
 
 		foreach ($functions as $functionName) {
-			if (! is_dir($path . $functionName)) {
+			if (
+				! is_dir($path . $functionName) AND
+				! is_dir($userPath . $functionName)
+			) {
 				continue;
 			}
 
@@ -159,9 +177,15 @@ class TwigEnvironment
 	public function loadTags($twig)
 	{
 		global $sysDir;
+		global $userDir;
 
 		$path = $sysDir . '/TwigTags/';
 		$tags = Helper\DirArray::directories($path);
+
+		$userPath = $userDir . '/TwigTagsTwigTags/';
+		$userTags = Helper\DirArray::directories($userPath);
+
+		$tags = array_merge($tags, $userTags);
 
 		$namespace = array(
 			'\Frame',
@@ -169,7 +193,10 @@ class TwigEnvironment
 		);
 
 		foreach ($tags as $tagName) {
-			if (! is_dir($path . $tagName)) {
+			if (
+				! is_dir($path . $tagName) AND
+				! is_dir($userPath . $tagName)
+			) {
 				continue;
 			}
 
