@@ -1,0 +1,73 @@
+{% extends "_layouts/master.twig" %}
+
+{# Set the page title #}
+{%- block pageTitle -%}{{ yaml.Title }}{%- endblock -%}
+
+{# Set the content class #}
+{% set contentClass = "software-support-page" %}
+
+{# Setup the form #}
+{% set formStatus = mandrillMailer({
+	identifier: "support",
+	required: [
+		"fromName",
+		"from",
+		"message"
+	],
+	to: "tj@buzzingpixel.com",
+	subject: ["Support - ", yaml.SoftwareTitle]|join,
+	json: true
+}) %}
+
+{# Set content #}
+{%- block content -%}
+	{# Include the software navigation #}
+	{%- include "_partials/softwareNav.twig" -%}
+
+	<div class="container site-inner-content contact contact--software-support">
+		<div class="contact__row">
+			<div class="contact__column">
+				{{ body|raw }}
+			</div>
+			<div class="contact__column">
+				<form action="" method="post" class="contact__form js-contact-form" novalidate>
+					<input
+						type="text"
+						name="support[fromName]"
+						placeholder="Your Name"
+						class="input"
+						required
+					>
+					<input
+						type="email"
+						name="support[from]"
+						placeholder="Your Email Address"
+						class="input js-email"
+						required
+					>
+					<textarea
+						name="support[message]"
+						placeholder="Please describe your problem"
+						class="textarea contact__textarea"
+						data-ref="input requiredInput"
+						required
+					></textarea>
+					<input
+						type="submit"
+						value="Submit"
+						class="input button button--colored js-submit"
+						data-val="Submit"
+						data-working="Processing..."
+					>
+				</form>
+			</div>
+		</div>
+		<div class="contact__note js-hide js-contact-note">
+			<div class="content-blocks__note-title">
+				Thank you!
+			</div>
+			<p>Your support request has been recieved and I will review the problem as soon as I can. Hang in there, help is on the way!</p>
+		</div>
+	</div>
+
+{%- endblock -%}

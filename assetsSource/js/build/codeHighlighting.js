@@ -1,3 +1,5 @@
+/* globals Prism */
+
 (function(F) {
 	'use strict';
 
