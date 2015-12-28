@@ -1,0 +1,25 @@
+{% extends "_layouts/master.twig" %}
+
+{# Set the page title #}
+{%- block pageTitle -%}{{ yaml.Title }}{%- endblock -%}
+
+{# Set the content class #}
+{% set contentClass = "software-support-page" %}
+
+{# Set content #}
+{%- block content -%}
+	{# Include the software navigation #}
+	{%- include "_partials/softwareNav.twig" -%}
+
+	<div class="container site-inner-content contact contact--software-support">
+		<div class="software-support-page__simple-body">
+			<p style="text-align: center;">Since {{ yaml.SoftwareTitle }} is free, I cannot guarantee fast support, nor can I, in fact, guarantee it at all. But if you open an issue on GitHub, I will do my best to help you out.</p>
+		</div>
+		<div class="software-support-page__link-out-button">
+			<a href="{{ yaml.GitHubSupportLink }}" class="button button--rounded button--rounded--hollow">
+				Open an Issue on GitHub »
+			</a>
+		</div>
+	</div>
+
+{%- endblock -%}
