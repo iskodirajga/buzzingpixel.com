@@ -26,25 +26,27 @@
 
 	{# Content container #}
 	<div class="container site-inner-content software-docs-blocks">
-		<div class="software|first-docs-blocks__inner-wrapper">
+		<div class="software-docs-blocks__inner-wrapper">
 
 			{# Content nav #}
 			<div class="software-docs-blocks__nav-wrapper">
 				<div class="software-docs-blocks__nav-wrapper-inner">
 
 					{# Doc sections #}
-					<nav class="software-docs-blocks__nav">
-						<div class="software-docs-blocks__nav-heading">Doc Sections</div>
-						<ul class="software-docs-blocks__nav-list">
-							{% for item in docs %}
-								<li class="software-docs-blocks__nav-item">
-									<a href="/{{ uri.segments[0] }}/{{ uri.segments[1] }}/{{ uri.segments[2] }}{% if loop.index > 1 %}/{{ item.slug }}{% endif %}" class="software-docs-blocks__nav-link{% if (loop.index == 1 and uri.segments[3] is null) or uri.segments[3] == item.slug %} software-docs-blocks__nav-link--active{% endif %}">
-										{{ item.Title }}
-									</a>
-								</li>
-							{% endfor %}
-						</ul>
-					</nav>
+					{% if docs|length > 1 %}
+						<nav class="software-docs-blocks__nav">
+							<div class="software-docs-blocks__nav-heading">Doc Sections</div>
+							<ul class="software-docs-blocks__nav-list">
+								{% for item in docs %}
+									<li class="software-docs-blocks__nav-item">
+										<a href="/{{ uri.segments[0] }}/{{ uri.segments[1] }}/{{ uri.segments[2] }}{% if loop.index > 1 %}/{{ item.slug }}{% endif %}" class="software-docs-blocks__nav-link{% if (loop.index == 1 and uri.segments[3] is null) or uri.segments[3] == item.slug %} software-docs-blocks__nav-link--active{% endif %}">
+											{{ item.Title }}
+										</a>
+									</li>
+								{% endfor %}
+							</ul>
+						</nav>
+					{% endif %}
 
 					{# Page sections #}
 					<nav clas="software-docs-blocks__nav software-docs-blocks__nav--page">
