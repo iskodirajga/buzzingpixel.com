@@ -34,9 +34,11 @@
 
 					{# Doc sections #}
 					{% if docs|length > 1 %}
-						<nav class="software-docs-blocks__nav">
-							<div class="software-docs-blocks__nav-heading">Doc Sections</div>
-							<ul class="software-docs-blocks__nav-list">
+						<nav class="software-docs-blocks__nav js-accordion">
+							<div class="software-docs-blocks__nav-heading js-accordion-heading">
+								Doc Sections
+							</div>
+							<ul class="software-docs-blocks__nav-list js-accordion-content">
 								{% for item in docs %}
 									<li class="software-docs-blocks__nav-item">
 										<a href="/{{ uri.segments[0] }}/{{ uri.segments[1] }}/{{ uri.segments[2] }}{% if loop.index > 1 %}/{{ item.slug }}{% endif %}" class="software-docs-blocks__nav-link{% if (loop.index == 1 and uri.segments[3] is null) or uri.segments[3] == item.slug %} software-docs-blocks__nav-link--active{% endif %}">
@@ -49,7 +51,7 @@
 					{% endif %}
 
 					{# Page sections #}
-					<nav clas="software-docs-blocks__nav software-docs-blocks__nav--page">
+					<nav class="software-docs-blocks__nav software-docs-blocks__nav--page">
 						<div class="software-docs-blocks__nav-heading">Page Sections</div>
 						<ul class="software-docs-blocks__nav-list">
 							{% for item in pageItems %}

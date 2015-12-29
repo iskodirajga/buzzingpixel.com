@@ -2,9 +2,11 @@
 	<div class="software-docs-blocks__nav-wrapper-inner">
 
 		{# Changelog Items #}
-		<nav class="software-docs-blocks__nav">
-			<div class="software-docs-blocks__nav-heading">Versions</div>
-			<ul class="software-docs-blocks__nav-list">
+		<nav class="software-docs-blocks__nav js-accordion">
+			<div class="software-docs-blocks__nav-heading js-accordion-heading">
+				Versions
+			</div>
+			<ul class="software-docs-blocks__nav-list js-accordion-content">
 				{% for item in changlogAll %}
 					<li class="software-docs-blocks__nav-item">
 						<a href="/{{ uri.segments[0] }}/{{ uri.segments[1] }}/{{ uri.segments[2] }}/{{ item.slug }}" class="software-docs-blocks__nav-link{% if uri.segments[3] == item.slug %} software-docs-blocks__nav-link--active{% endif %}">
