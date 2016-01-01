@@ -1,5 +1,4 @@
 ---
-box: laravel/homestead-7
 ip: "192.168.10.12"
 memory: 2048
 cpus: 1
@@ -13,13 +12,13 @@ keys:
     - ~/.ssh/id_rsa
 
 folders:
-    - map: ~/Sites/BuzzingPixel/BuzzingPixel.com/repo/
-      to: /home/vagrant/BuzzingPixel
+    - map: /Users/tjdraper/Sites/BuzzingPixel/BuzzingPixel.com/repo/
+      to: /home/vagrant/BuzzingPixel/
       type: "nfs"
 
 sites:
     - map: buzzingpixel.dev
-      to: /home/vagrant/BuzzingPixel/public_html
+      to: /home/vagrant/BuzzingPixel/public_html/
 
 databases:
     - homestead
