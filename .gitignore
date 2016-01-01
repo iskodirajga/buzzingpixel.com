@@ -39,6 +39,8 @@ browserstack.js
 codekit-config.json
 mixture.json
 prepros.json
+Homestead.yaml
+vendor/*
 
 
 
@@ -62,6 +64,7 @@ prepros.json
 *.vi
 error_log
 Thumbs.db
+*.vagrant
 
 
 
