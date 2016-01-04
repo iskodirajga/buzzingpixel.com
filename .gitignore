@@ -14,7 +14,7 @@ system/user/cache/*
 #------------------------------------
 
 # Caches
-public_html/cache/*
+public/cache/*
 
 
 
