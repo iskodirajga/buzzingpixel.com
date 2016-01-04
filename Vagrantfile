@@ -26,6 +26,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         config.vm.provision "shell", path: afterScriptPath
     end
 
+    config.vm.box_version = "0.4.0"
+
     # Make sure nginx restarts after shared folders are mounted.
     config.vm.provision "shell", inline: "sudo service nginx restart",
       run: "always"
