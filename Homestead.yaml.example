@@ -12,13 +12,13 @@ keys:
     - ~/.ssh/id_rsa
 
 folders:
-    - map: /Users/tjdraper/Sites/BuzzingPixel/BuzzingPixel.com/repo/
-      to: /home/vagrant/BuzzingPixel/
+    - map: ~/Sites/BuzzingPixel/BuzzingPixel.com/repo/
+      to: /home/vagrant/BuzzingPixel
       type: "nfs"
 
 sites:
     - map: buzzingpixel.dev
-      to: /home/vagrant/BuzzingPixel/public_html/
+      to: /home/vagrant/BuzzingPixel/public
 
 databases:
     - homestead
