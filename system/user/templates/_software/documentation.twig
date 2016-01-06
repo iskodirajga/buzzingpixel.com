@@ -72,7 +72,9 @@
 						<div class="content-blocks__image content-blocks__image--{{ item.FloatingImageSide|default("right") }}-thumbnail">
 							<img
 								src="{{ item.FloatingImage }}"
-								width="400"
+								{% if item.FloatingImageWidth %}
+								width="{{ item.FloatingImageWidth }}"
+								{% endif %}
 								class="content-blocks__image-thumb-img"
 							>
 						</div>
