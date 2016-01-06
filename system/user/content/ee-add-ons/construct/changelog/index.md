@@ -1,0 +1,6 @@
+---
+Title: Category Changelog
+Template: _software/changelog
+ListingTemplate: _software/changelogEntry
+HeaderBackgroundImage: /assets/img/banners/construct-hero-bg.jpg
+---
