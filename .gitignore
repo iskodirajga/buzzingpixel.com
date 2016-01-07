@@ -4,7 +4,12 @@
 
 # Ignore cache
 system/user/cache/*
+
+# Ignore phone home collection data
 system/user/TwigFunctions/PhoneHome/Data/*
+
+# Ignore secret info
+system/user/config/secret.php
 
 
 
