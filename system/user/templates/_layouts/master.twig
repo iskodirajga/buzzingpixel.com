@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	{# Set a page title #}
-	<title>{% if SeoTitle is not empty%}{{ SeoTitle }} |{% elseif yaml.SeoTitle is not empty %}{{ yaml.SeoTitle }} | {% elseif yaml.Title is not empty %}{{ yaml.Title }} | {% endif %}BuzzingPixel</title>
+	<title>{% if SeoTitle is not empty%}{{ SeoTitle }} | {% elseif yaml.SeoTitle is not empty %}{{ yaml.SeoTitle }} | {% elseif yaml.Title is not empty %}{{ yaml.Title }} | {% endif %}BuzzingPixel</title>
 
 	{# Set the page description #}
 	{% if yaml.SeoDescription is not empty %}
