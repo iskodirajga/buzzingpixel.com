@@ -1,0 +1,43 @@
+{% spaceless %}<?xml version="1.0" encoding="UTF-8"?>
+
+{{ httpContentType({
+	value: "application/xml"
+}) }}
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	{# Main Nav Pages #}
+	{% for item in nav %}
+		<url>
+			<loc>https://buzzingpixel.com{{ item.link }}</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+		{% if item.subnav|length %}
+			{% for subnav in item.subnav %}
+				<url>
+					<loc>https://buzzingpixel.com{{ subnav.link }}</loc>
+					<changefreq>weekly</changefreq>
+				</url>
+				{% if subnav.subnav|length %}
+					{% for subnav2 in subnav.subnav %}
+						<url>
+							<loc>https://buzzingpixel.com{{ subnav2.link }}</loc>
+							<changefreq>weekly</changefreq>
+						</url>
+					{% endfor %}
+				{% endif %}
+			{% endfor %}
+		{% endif %}
+	{% endfor %}
+
+	{# News pages #}
+	{% set news = listing({
+		path: "news"
+	}) %}
+
+	{% for entry in news %}
+		<url>
+			<loc>https://buzzingpixel.com/news/{{ entry.slug }}</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+	{% endfor %}
+</urlset>{% endspaceless %}
