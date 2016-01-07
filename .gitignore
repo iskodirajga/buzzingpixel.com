@@ -4,6 +4,7 @@
 
 # Ignore cache
 system/user/cache/*
+system/user/TwigFunctions/PhoneHome/Data/*
 
 
 
