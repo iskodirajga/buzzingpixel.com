@@ -3,6 +3,9 @@
 {# Set the header background #}
 {%- block headerBackground -%}{{ listingParentYaml.HeaderBackgroundImage }}{%- endblock -%}
 
+{# Set the SEO title #}
+{% set SeoTitle = [listingParentYaml.Title, " ", yaml.Version]|join %}
+
 {# Set the page title #}
 {%- block pageTitle -%}{{ listingParentYaml.Title }} {{ yaml.Version }}{%- endblock -%}
 
