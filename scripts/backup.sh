@@ -4,10 +4,10 @@
 DATE=$(date +"%Y-%m-%d__%H-%M-%S");
 
 # Make the backup directory based on the date
-mkdir -p /home/forge/backups/staging.buzzingpixel.com/${DATE};
+mkdir -p /home/forge/backups/buzzingpixel.com/${DATE};
 
 # Archive files
-tar -czf /home/forge/backups/staging.buzzingpixel.com/${DATE}/files.tar.gz /home/forge/staging.buzzingpixel.com/;
+tar -czf /home/forge/backups/buzzingpixel.com/${DATE}/files.tar.gz /home/forge/buzzingpixel.com/;
 
 # Sync to S3
 /usr/local/aws/bin/aws s3 sync /home/forge/backups/ s3://washbackups
