@@ -7,6 +7,9 @@
 # Copy the nginx config
 sudo cp /home/vagrant/BuzzingPixel/nginxConf/local.conf /etc/nginx/sites-available/buzzingpixel.dev;
 
+# Copy PHP config
+sudo cp /home/vagrant/BuzzingPixel/nginxConf/localPhp.ini /etc/php/7.0/fpm/php.ini;
+
 # Copy SSL Certs
 sudo cp /home/vagrant/BuzzingPixel/devCerts/buzzingpixel.dev.crt /etc/nginx/ssl/buzzingpixel.dev.crt;
 sudo cp /home/vagrant/BuzzingPixel/devCerts/buzzingpixel.dev.csr /etc/nginx/ssl/buzzingpixel.dev.csr;
