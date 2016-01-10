@@ -17,11 +17,11 @@ The ID of the currently matched Node.
 
 The ID of the Tree from the currently matched Node.
 
-#### `{construct_route:node_parent_id}`
+#### `{construct_route:node_parent_id}` <span class="content-blocks__heading-note">New in v2</span>
 
 The parent ID of the currently matched Node. 0 if Node has no parent.
 
-#### `{construct_route:node_level}`
+#### `{construct_route:node_level}` <span class="content-blocks__heading-note">New in v2</span>
 
 The level of the currently matched Node.
 
@@ -33,7 +33,7 @@ The name of the currently matched Node.
 
 The slug of the currently matched node — which will be the same as the last URI segment.
 
-#### `{construct_route:node_external_link}`
+#### `{construct_route:node_external_link}` <span class="content-blocks__heading-note">New in v2</span>
 
 The external link field of the currently matched Node.
 
@@ -62,19 +62,19 @@ The entry ID of the selected entry for the currently matched Node. When using Co
 </pre>
 </div>
 
-#### `{construct_route:node_output}`
+#### `{construct_route:node_output}` <span class="content-blocks__heading-note">New in v2</span>
 
 Whether the currently matched Node is set to output in Menus.
 
-#### `{construct_route:node_pagination}`
+#### `{construct_route:node_pagination}` <span class="content-blocks__heading-note">New in v2</span>
 
 Whether the currently matched Node is set to paginate.
 
-#### `{construct_route:node_pagination_amount}`
+#### `{construct_route:node_pagination_amount}` <span class="content-blocks__heading-note">New in v2</span>
 
 The pagination amount set for the currently matched Node.
 
-#### `{construct_route:node_listing_channels}`
+#### `{construct_route:node_listing_channels}` <span class="content-blocks__heading-note">New in v2</span>
 
 The channel(s) chosen for listing. If there is more than on channel, they will be pipe delimited.
 
