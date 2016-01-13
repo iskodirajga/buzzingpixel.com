@@ -1,0 +1,33 @@
+{% extends "_layouts/master.twig" %}
+
+{# Set the page title #}
+{%- block pageTitle -%}{{ yaml.Title }}{%- endblock -%}
+
+{# Set the content class #}
+{% set contentClass = "software-support-page" %}
+
+{# Setup the form #}
+{% set formStatus = mandrillMailer({
+	identifier: "support",
+	required: [
+		"fromName",
+		"from",
+		"message"
+	],
+	to: "tj@buzzingpixel.com",
+	subject: ["Support - ", yaml.SoftwareTitle]|join,
+	json: true
+}) %}
+
+{# Set content #}
+{%- block content -%}
+	{# Include the software navigation #}
+	{%- include "_partials/softwareNav.twig" -%}
+
+	<div class="container site-inner-content software-index__item">
+		<div class="container software-index__item-inner">
+			{{ body|raw }}
+		</div>
+	</div>
+
+{%- endblock -%}

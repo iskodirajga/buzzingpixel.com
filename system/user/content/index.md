@@ -8,8 +8,8 @@ PrimaryBannerImage: /assets/img/home/construct-computer-screen.png
 BannerSubHeading: Construct
 BannerSubHeading2: completely rebuilt for ExpressionEngine 3
 BannerContent: Easily create menus, pages, nested pages, manage routing, and more!
-BannerActionButton: Get Construct
-BannerActionLink: /ee-add-ons/construct
+BannerActionButton: Watch the video
+BannerActionLink: /ee-add-ons/construct/demo-video
 LeftImage: /assets/img/home/headshot-2015.jpg
 ---
 

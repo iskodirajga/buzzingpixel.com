@@ -28,6 +28,10 @@ return [
 							'title' => 'documentation',
 							'link' => '/ee-add-ons/construct/documentation'
 						],
+						'demo-video' => [
+							'title' => 'demo video',
+							'link' => '/ee-add-ons/construct/demo-video'
+						],
 						'changelog' => [
 							'title' => 'changelog',
 							'link' => '/ee-add-ons/construct/changelog'
