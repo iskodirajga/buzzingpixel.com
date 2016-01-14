@@ -7,6 +7,10 @@ Items:
     image: /assets/img/portfolio/whitetail/whitetail-listing.png
     title: WhitetailProperties.com
     description: This was a complete rebuild of the Whitetail Properties website. The new site uses a lot of AJAX interaction to help users search for properties dynamically. It also includes a member registration component so users can save searches and favorite properties.
+  play-park:
+    image: /assets/img/portfolio/play-park/play-park-listing.jpg
+    title: PlayAndPark.com
+    description: As a distributer of children's playgrounds, Play and Park needed a website that was fun and engaging, and made it easy to find and learn about their products.
   easton:
     image: /assets/img/portfolio/easton/easton-listing.jpg
     title: EastonHunting.com
