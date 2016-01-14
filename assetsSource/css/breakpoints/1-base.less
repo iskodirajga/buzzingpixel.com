@@ -773,7 +773,6 @@ h6 {
 	}
 	&__image {
 		.align(center);
-		.background(@bzpxlOrange);
 		.block();
 		.bold();
 		.crop();
@@ -837,6 +836,9 @@ h6 {
 	&__description {
 		.line-height(@paragraphLineHeight);
 		.padding(20px);
+		p:last-child {
+			.spaced(0);
+		}
 	}
 	&__action-button {
 		.centered-block(400px);
@@ -844,5 +846,9 @@ h6 {
 	&__extended {
 		.centered-block(1000px);
 		.padding(20px);
+	}
+	&__mobile-float {
+		.centered-block();
+		.max-width(300px);
 	}
 }

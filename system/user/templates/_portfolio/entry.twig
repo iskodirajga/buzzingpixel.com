@@ -25,6 +25,15 @@
 			<p>{{ yaml.Description }}</p>
 		</div>
 		<div class="portfolio-item__extended">
+			{% if yaml.Mobile %}
+				<div class="portfolio-item__mobile">
+					<div class="portfolio-item__mobile-float">
+						<img src="{{ yaml.MobileImage }}" alt="Mobile Friendly">
+					</div>
+					<h2>Mobile Friendly</h2>
+					<p>{{ yaml.MobileText|raw }}</p>
+				</div>
+			{% endif %}
 			{{ body|raw }}
 		</div>
 	</div>
