@@ -6,7 +6,10 @@ MainImage: /assets/img/portfolio/whitetail/whitetail-listing.png
 SiteLink: https://www.whitetailproperties.com
 Roll: Lead Developer
 Technologies: HTML, CSS, JavaScript, PHP, MySQL, ExpressionEngine, Google Maps
-Description: During my time as senior developer at Caddis Interactive, I had the privileged of being lead developer on this project. When it came time to rebuild the WhitetailProperties website and bring it up to the latest web standards for usability, making a mobile friendly site was key. The new site is fully responsive for all screen sizes and devices of any kind.
+Description: During my time as senior developer at Caddis Interactive, I had the privilege of being lead developer on this project. When it came time to rebuild the WhitetailProperties website and bring it up to the latest web standards, making a mobile friendly site was key.
+Mobile: true
+MobileImage: /assets/img/portfolio/whitetail/whitetail-iphone.png
+MobileText: In the modern world phones and mobile devices make up a very large percentage of web users. These users expect any site they browse to look good on their device. They expect and need functionality and usability from the websites they visit. They don't want to wait on things that take a long time to load over mobile networks and they don't want crippled usability. This segment of users cannot be overlooked.</p><p>For WhitetailProperties, it is vitally important that the website be usable for agents and land buyers in the field looking at land, finding out stats, making decisions and so-forth. Making the new site not just mobile friendly, but built from the ground up with mobile in mind was an absolute must. Building features mobile first ensured that all features were available to both mobile and desktop users and that the experience would be just as good from both types of devices.
 ---
 
 ## Dynamic search
