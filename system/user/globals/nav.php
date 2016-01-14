@@ -178,7 +178,7 @@ return [
 			]
 		],
 		'contact' => [
-			'title' => 'contact',
+			'title' => 'hire me',
 			'link' => '/contact',
 			'subnav' => []
 		]
