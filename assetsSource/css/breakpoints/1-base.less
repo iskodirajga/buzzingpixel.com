@@ -272,14 +272,24 @@ ul {
 		.font-size(30px);
 		.padding(bottom; 60px);
 	}
-	&__left-image {
+	&__left-image,
+	&__right-image {
 		.centered-block();
 		.circle(260px);
 		.crop();
 		.spaced(30px);
 	}
-	&__right-content {
+	&__right-content,
+	&__left-content {
 		.centered-block(500px);
+	}
+	&__latest-news {
+		.centered-block(600px);
+	}
+	&__latest-news-item {
+		&--padded {
+			.spaced(80px);
+		}
 	}
 }
 
