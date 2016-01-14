@@ -16,3 +16,15 @@ Items:
     title: EastonHunting.com
     description: Easton Hunting needed a site that was more modern and mobile friendly for today's audience, but still unique enough to grab attention. And they wanted to stand out in the industry.
 ---
+
+<h2 class="centered">Other Work</h2>
+
+<p class="centered">
+	I’ve done a lot of other development related things that don't fit easily into a single site context.
+</p>
+
+<p class="centered">
+	<a href="/portfolio/other" class="button button--rounded button--rounded--hollow">
+		View Work »
+	</a>
+</p>
