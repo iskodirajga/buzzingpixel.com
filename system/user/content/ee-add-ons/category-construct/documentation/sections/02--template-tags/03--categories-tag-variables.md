@@ -18,6 +18,7 @@ Variables Quick Reference
 {construct:cat_description}<br>
 {construct:cat_image}<br>
 {construct:custom_field_name}<br>
+{construct:parent_l2:var_name} (new in 2.1.0)<br>
 {construct:entry_count}<br>
 {construct:count}<br>
 {construct:total_results}<br>
@@ -66,6 +67,10 @@ The image associated with the category. Though Category Construct does not allow
 #### `{construct:custom_field_name}` <span class="content-blocks__heading-note">Variable</span>
 
 You can access your custom fields by using your namespace plus your fieldname: `{construct:field_name}`.
+
+#### `{construct:parent_l2:var_name}` <span class="content-blocks__heading-note">Variable</span> <span class="content-blocks__heading-note">new in 2.1.0</span>
+
+All parent variables are available to the current child through this tag. Use `{construct:parent_l1:cat_name}`, `{construct:parent_l2:cat_url_title}` and so on.
 
 #### `{construct:entry_count}` <span class="content-blocks__heading-note">Variable</span>
 
