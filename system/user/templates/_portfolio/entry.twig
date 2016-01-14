@@ -1,0 +1,33 @@
+{% extends "_layouts/master.twig" %}
+
+{# Set the page title #}
+{%- block pageTitle -%}{{ yaml.Title }}{%- endblock -%}
+
+{# Set the content class #}
+{% set contentClass = "portfolio-entry" %}
+
+{# Set content #}
+{%- block content -%}
+
+<div class="portfolio">
+	<div class="portfolio-item">
+		<a href="{{ yaml.SiteLink }}" target="blank" class="portfolio-item__image">
+			<span class="portfolio-item__image-bg portfolio-item__image-bg--hidden-roll-over" style="background-image: url({{ yaml.MainImage }})"></span>
+			<span class="button button--rounded button--rounded--hollow portfolio-item__hidden-roll-over-btn">
+				Visit the site &raquo;
+			</span>
+		</a>
+		<div class="portfolio-item__description">
+			<p>
+				<strong>Roll</strong>: {{ yaml.Roll }}<br>
+				<strong>Technologies</strong>: {{ yaml.Technologies }}
+			</p>
+			<p>{{ yaml.Description }}</p>
+		</div>
+		<div class="portfolio-item__extended">
+			{{ body|raw }}
+		</div>
+	</div>
+</div>
+
+{%- endblock -%}

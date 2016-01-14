@@ -237,3 +237,39 @@
 		.column-inline(spaced; 1; 2);
 	}
 }
+
+
+
+
+
+/*------------------------------------*\
+	# Portfolio
+\*------------------------------------*/
+
+.portfolio-item {
+	&__hidden-roll-over-btn {
+		.margin(top; 130px);
+	}
+	&__image {
+		.align(middle);
+		.font-size(30px);
+		.inline-block(60%);
+		.height(360px);
+		&--even {
+			.column-push(4; 10);
+		}
+	}
+	&__image-text {
+		.margin(top; 140px);
+	}
+	&__description {
+		.align(middle);
+		.inline-block(40%);
+		&--even {
+			.column-pull(6; 10);
+		}
+	}
+	&__extended {
+		.padding(80px);
+	}
+}
