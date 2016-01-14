@@ -24,7 +24,7 @@
 	<div class="container site-inner-content contact">
 		<div class="contact__row">
 			<div class="contact__column">
-				{{ body|raw }}
+				{{ yaml.LeftText|markdown|raw }}
 			</div>
 			<div class="contact__column">
 				<form action="" method="post" class="contact__form js-contact-form" novalidate>
@@ -65,6 +65,7 @@
 			</div>
 			<p>Your email has been sent by the robots behind the scene running the website and I will respond to you as soon as I can!</p>
 		</div>
+		{{ body|raw }}
 	</div>
 
 {%- endblock -%}
