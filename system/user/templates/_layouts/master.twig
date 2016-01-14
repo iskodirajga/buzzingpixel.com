@@ -41,7 +41,7 @@
 	<meta property="og:image" content="{{ shareImage|default('/share.png') }}" itemprop="image">
 
 	{# Include the primary stylesheet #}
-	<link rel="stylesheet" href="/assets/css/style.min.css">
+	<link rel="stylesheet" href="/assets/css/style.min.css?{{ cssVer }}">
 
 	{# Include TypeKit #}
 	<script src="//use.typekit.net/txd0vvo.js"></script>
@@ -87,7 +87,7 @@
 	{# Primary scripts #}
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="/assets/js/lib/jQuery-2.1.4.min.js">\x3C/script>')</script>
-	<script src="/assets/js/script.min.js"></script>
+	<script src="/assets/js/script.min.js?{{ jsVer }}"></script>
 </body>
 </html>
 {% endspaceless %}
