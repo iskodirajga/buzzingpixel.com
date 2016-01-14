@@ -10,6 +10,7 @@ group_id="1"<br>
 namespace="my_namespace"<br>
 max_depth="2"<br>
 parent_id="24"<br>
+parent_id_with_children="2|4|6" (new in 2.1.0)<br>
 direct_parent="28"<br>
 cat_url_title="hunting"<br>
 cat_id="4"<br>
@@ -36,6 +37,10 @@ Limit the depth of nesting the tag will output.
 #### `parent_id="24"` <span class="content-blocks__heading-note">Param</span>
 
 Specify the parent ID to get the child categories of that parent.
+
+#### `parent_id_with_children="2|4|6"` <span class="content-blocks__heading-note">Param</span> <span class="content-blocks__heading-note">new in 2.1.0</span>
+
+This paramater gets one or more category with all children levels.
 
 #### `direct_parent="28"` <span class="content-blocks__heading-note">Param</span>
 
