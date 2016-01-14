@@ -56,6 +56,25 @@ ul {
 
 
 /*------------------------------------*\
+	# Generic Page
+\*------------------------------------*/
+
+.page {
+	.centered-block(700px);
+	.padding(40px; 20px);
+	p:last-child {
+		.spaced(0);
+	}
+	h2 {
+		.spaced(4px);
+	}
+}
+
+
+
+
+
+/*------------------------------------*\
 	# Header
 \*------------------------------------*/
 
@@ -762,6 +781,13 @@ h6 {
 	# Portfolio
 \*------------------------------------*/
 
+.portfolio {
+	&__extended {
+		.centered-block(1000px);
+		.padding(bottom; 10px);
+		.padding(top; 80px);
+	}
+}
 .portfolio-item {
 	&__hidden-roll-over-btn {
 		.centered-block(400px);
