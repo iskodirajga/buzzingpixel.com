@@ -12,6 +12,11 @@ return [
 			'link' => '/news',
 			'subnav' => []
 		],
+		'portfolio' => [
+			'title' => 'portfolio',
+			'link' => '/portfolio',
+			'subnav' => []
+		],
 		'ee-add-ons' =>[
 			'title' => 'ee add-ons',
 			'link' => '/ee-add-ons',
@@ -177,7 +182,7 @@ return [
 			]
 		],
 		'contact' => [
-			'title' => 'contact',
+			'title' => 'hire me',
 			'link' => '/contact',
 			'subnav' => []
 		]

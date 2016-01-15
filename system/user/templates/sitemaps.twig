@@ -11,6 +11,24 @@
 			<loc>https://buzzingpixel.com{{ item.link }}</loc>
 			<changefreq>weekly</changefreq>
 		</url>
+		{% if item.link == "/portfolio" %}
+			<url>
+				<loc>https://buzzingpixel.com/portfolio/whitetail-properties</loc>
+				<changefreq>weekly</changefreq>
+			</url>
+			<url>
+				<loc>https://buzzingpixel.com/portfolio/play-park</loc>
+				<changefreq>weekly</changefreq>
+			</url>
+			<url>
+				<loc>https://buzzingpixel.com/portfolio/easton</loc>
+				<changefreq>weekly</changefreq>
+			</url>
+			<url>
+				<loc>https://buzzingpixel.com/portfolio/other</loc>
+				<changefreq>weekly</changefreq>
+			</url>
+		{% endif %}
 		{% if item.subnav|length %}
 			{% for subnav in item.subnav %}
 				<url>

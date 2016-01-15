@@ -3,14 +3,21 @@
 \*------------------------------------*/
 
 .home-page-content {
-	&__left-image {
+	&__left-image,
+	&__right-image {
 		.circle(483px);
 	}
-	&__right-content {
-		.margin(left; 540px);
+	&__right-content,
+	&__left-content {
 		.margin(top; 70px);
 		p {
 			.font-size(18px; 2.2em);
 		}
+	}
+	&__right-content {
+		.margin(left; 540px);
+	}
+	&__left-content {
+		.margin(right; 540px);
 	}
 }

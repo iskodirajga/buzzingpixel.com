@@ -18,13 +18,41 @@
 {%- endblock -%}
 
 {%- block content -%}
-	<div class="container site-inner-content home-page-content">
-		<h2 class="home-page-content__heading">{{ yaml.Title }}</h2>
-		<div class="home-page-content__left-image">
-			<img src="{{ yaml.LeftImage }}" class="home-page-content__left-image-tag">
+	{% for key,item in yaml.Items %}
+		<div class="container site-inner-content home-page-content{% if loop.index is even %} gray-background{% endif %}">
+			<div class="home-page-content__inner">
+				<h2 class="home-page-content__heading">{{ item.title }}</h2>
+				{% if key == "news" %}
+					<div class="home-page-content__latest-news">
+						{% set news = listing({
+							path: "news",
+							limit: 2
+						}) %}
+						{% for newsItem in news %}
+							<div class="home-page-content__latest-news-item{% if not loop.last %} home-page-content__latest-news-item--padded{% endif %}">
+								<h3 class="home-page-content__latest-news-heading">
+									<a href="/news/{{ newsItem.slug }}">
+										{{ newsItem.Title }}
+									</a>
+								</h3>
+								<p>{{ newsItem.body|striptags|truncate(300, true)|raw }}</p>
+								<div class="centered">
+									<a href="/news/{{ newsItem.slug }}" class="button button--rounded button--rounded--hollow">
+										Read Entry »
+									</a>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				{% else %}
+					<div class="{% if loop.index is even %}home-page-content__left-image{% else %}home-page-content__right-image{% endif %}">
+						<img src="{{ item.image }}">
+					</div>
+					<div class="{% if loop.index is even %}home-page-content__right-content{% else %}home-page-content__left-content{% endif %}">
+						{{ item.text|markdown|raw }}
+					</div>
+				{% endif %}
+			</div>
 		</div>
-		<div class="home-page-content__right-content">
-			{{ body|raw }}
-		</div>
-	</div>
+	{% endfor %}
 {%- endblock -%}

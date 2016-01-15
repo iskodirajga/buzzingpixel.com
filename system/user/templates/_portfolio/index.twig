@@ -1,0 +1,34 @@
+{% extends "_layouts/master.twig" %}
+
+{# Set the page title #}
+{%- block pageTitle -%}{{ yaml.Title }}{%- endblock -%}
+
+{# Set the content class #}
+{% set contentClass = "portfolio-index" %}
+
+{# Set content #}
+{%- block content -%}
+
+<div class="portfolio">
+	{# Portfolio items #}
+	{% for itemKey,item in yaml.Items %}
+		<div class="portfolio-item">
+			<a href="/portfolio/{{ itemKey }}" class="portfolio-item__image portfolio-item__image--{% if loop.index is odd %}odd{% else %}even{% endif %}">
+				<span class="portfolio-item__image-bg" style="background-image: url({{ item.image }})"></span>
+				<span class="portfolio-item__image-text">{{ item.title }}</span>
+			</a>
+			<div class="portfolio-item__description portfolio-item__description--{% if loop.index is odd %}odd{% else %}even{% endif %}">
+				<p>{{ item.description }}</p>
+
+				<a href="/portfolio/{{ itemKey }}" class="button button--rounded button--rounded--hollow portfolio-item__action-button">
+					Learn More &raquo;
+				</a>
+			</div>
+		</div>
+	{% endfor %}
+	<div class="portfolio__extended">
+		{{ body|raw }}
+	</div>
+</div>
+
+{%- endblock -%}

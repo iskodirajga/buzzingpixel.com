@@ -56,6 +56,25 @@ ul {
 
 
 /*------------------------------------*\
+	# Generic Page
+\*------------------------------------*/
+
+.page {
+	.centered-block(700px);
+	.padding(40px; 20px);
+	p:last-child {
+		.spaced(0);
+	}
+	h2 {
+		.spaced(4px);
+	}
+}
+
+
+
+
+
+/*------------------------------------*\
 	# Header
 \*------------------------------------*/
 
@@ -219,6 +238,9 @@ ul {
 	&__nav {
 		.spaced(30px);
 	}
+	&__nav-list {
+		.margin(left; 0);
+	}
 	&__logo-link {
 		.centered-block();
 		.size(144px; 120px);
@@ -253,14 +275,24 @@ ul {
 		.font-size(30px);
 		.padding(bottom; 60px);
 	}
-	&__left-image {
+	&__left-image,
+	&__right-image {
 		.centered-block();
 		.circle(260px);
 		.crop();
 		.spaced(30px);
 	}
-	&__right-content {
+	&__right-content,
+	&__left-content {
 		.centered-block(500px);
+	}
+	&__latest-news {
+		.centered-block(600px);
+	}
+	&__latest-news-item {
+		&--padded {
+			.spaced(80px);
+		}
 	}
 }
 
@@ -751,5 +783,115 @@ h6 {
 	}
 	&__description {
 		.spaced(0);
+	}
+}
+
+
+
+
+
+/*------------------------------------*\
+	# Portfolio
+\*------------------------------------*/
+
+.portfolio {
+	&__extended {
+		.centered-block(1000px);
+		.padding(bottom; 10px);
+		.padding(top; 80px);
+	}
+}
+.portfolio-item {
+	&__hidden-roll-over-btn {
+		.centered-block(400px);
+		.margin(top; 50px);
+		.relative();
+		.transition();
+		.transparent();
+		.z-index(2);
+	}
+	&__image {
+		.align(center);
+		.block();
+		.bold();
+		.crop();
+		.font-size(20px);
+		.height(200px);
+		.padding(30px);
+		.relative();
+		.white();
+		&-bg {
+			.background-position(center; center);
+			.background-size(cover);
+			.transition();
+			.z-index(1);
+			&,
+			&:before {
+				.absolute(0; 0);
+				.block();
+				.content();
+				.fill(both);
+			}
+			&:before {
+				.background(dark; 68%);
+				.z-index(2);
+			}
+			&--hidden-roll-over {
+				&:before {
+					.transition();
+					.transparent();
+				}
+			}
+		}
+		&,
+		&:hover {
+			.white();
+		}
+		&:hover {
+			.color(@bzpxlOrange);
+			.portfolio-item {
+				&__image {
+					&-bg {
+						.scale(1.15);
+						&--hidden-roll-over {
+							&:before {
+								.opaque();
+							}
+						}
+					}
+				}
+				&__hidden-roll-over-btn {
+					.opaque();
+				}
+			}
+		}
+	}
+	&__image-text {
+		.block();
+		.margin(top; 60px);
+		.relative();
+		.z-index(2);
+	}
+	&__description {
+		.line-height(@paragraphLineHeight);
+		.padding(20px);
+		p:last-child {
+			.spaced(0);
+		}
+	}
+	&__action-button {
+		.centered-block(400px);
+	}
+	&__extended {
+		.centered-block(1000px);
+		.padding(20px);
+	}
+	&__mobile {
+		.clearfix();
+	}
+	&__mobile-float,
+	&__mobile-inline {
+		.centered-block();
+		.max-width(300px);
 	}
 }
