@@ -1,23 +1,49 @@
 ---
-Title: Template Preferences
-FloatingImage: /assets/img/documentation/construct/tree-mag.png
+Title: Trees
+FloatingImage: /assets/img/documentation/construct/trees.png
 FloatingImageSide: right
-FloatingImageWidth: 272
 ---
 
-This is where the bulk of your Control Panel interaction with Construct will happen. From here you can created nested or flat menu and page arrangements that will drag and drop intuitively and efficiently.
+Construct Trees are containers for nodes. You may create as many trees as you like. Each tree has settings for what member group has access to it. For instance, you may wish to have a Tree for the main navigation, secondary navigation (perhaps in the footer or something like that), and general site page that are not in any menus.
 
-When you first install Construct, there will not yet be any trees so you’ll want to add some. You will probably ever only need one or two trees depending on the complexity of your site. Click the “Add New Tree” button to get started.
+In short, you can use as many Trees as you like however you like.
 
-### Adding and editing trees
+On a new installation and/or when there are no Trees in Construct yet, if you are a Super Admin, you will be presented with the option to create a new tree from the Manage Trees section as soon as you visit construct.
 
-<p><img src="/assets/img/documentation/construct/add-new-tree-dialog.png" width="613"></p>
+Any Trees a member group has access to will appear in the left sidebar. If a non-Super Admin group only has access to one tree, they will not see the sidebar and will only see the tree they have access to.
 
-Clicking the “Add New Tree” button will present a standard Add Tree/Tree Settings dialog. Here you can give your tree a name, determine what templates from your Template Preferences will be available to this tree, which member groups can access it, and the maximum nesting depth (up to 5 at the present time).
+### Ordering Trees
+
+Trees appear in a specific order in the sidebar. To rearrange the order they appear in, click on “Manage Trees” in the sidebar. Just like with template preferences, you can drag and drop to sort and click save at the bottom of the form to save the order.
+
+### Deleting Trees
+
+As with Template Preferences, if you wish to delete a Tree **and all the Nodes in that Tree**, select the Delete checkbox in the right hand column and click save at the bottom of the form.
 
 <div class="content-blocks__note">
-<div class="content-blocks__note-title">Note</div>
-<p>
-The same dialog is used if you click on the “Tree Settings” link next to a Tree’s name. The only difference is there will be one extra button/option to delete a tree.
-</p>
+	<div class="content-blocks__note-title">Note</div>
+	<p>Please take note that deleting a Tree deletes all the Nodes in that Tree. <strong>DELETING A TREE AND ITS NODES IS A DESTRUCTIVE ACTION AND IS NOT RECOVERABLE WITHOUT A DATABASE BACKUP.</strong></p>
 </div>
+
+### Tree Options
+
+#### Tree Name
+
+This is the name that will appear to users in the sidebar.
+
+#### Maximum nesting level
+
+This determines how many levels deep a Node may be.
+
+#### Tree templates
+
+Choose what templates are available to Noes in this tree for building pages.
+
+<div class="content-blocks__note">
+	<div class="content-blocks__note-title">Note</div>
+	<p>Routing must be enabled to associate Template with Nodes.</p>
+</div>
+
+#### Tree Member Group Access
+
+Choose what member groups other than Super Admins can access this Tree.

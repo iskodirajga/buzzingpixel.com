@@ -1,13 +1,57 @@
 ---
 Title: Template Preferences
-FloatingImage: /assets/img/documentation/construct/construct-add-template-dialog.png
+FloatingImage: /assets/img/documentation/construct/template-preferences-listing.jpg
 FloatingImageSide: right
 ---
 
-Template preferences are a method of abstracting the ExpressionEngine template group and template name. If there are no template preferences, you will not be able to select a template for any of your nodes.
+Construct's Template Preferences are a way of associating a user friendly name with an ExpressionEngine template. Each Construct Template Preference is a one to one relationship with an EE template.
 
-In order to set up a template preference, you must give it a name and select an ExpressionEngine template. These must be unique. There is not really any point in selecting an ExpressionEngine template for more than one template preference. For the name, you might use something like “Standard page,” or “Page w/Sidebar” to help properly identify the page type to the user.
+There are two steps to enabling templates to be selected by nodes:
 
-Essentially, all you’re doing with the Template Preference name and it’s associated ExpressionEngine template is giving the EE template a friendly and recognizable name.
+1. Create a template preference for the EE templates you would like to have available
+2. Later when creating Trees, chose one or more Template Preferences to make available to nodes in that Tree (more on that later)
 
-The third option on a Template Preference is for the channels associated with the template. In general you’ll probably only have one. But there may be cases where more than one channels shares a field group and you want to have the entries of more than one channel available to the template. And channels are optional. If you have a static template for a one off page, you don’t have to select a channel for a particular template.
+<div class="content-blocks__note">
+	<div class="content-blocks__note-title">Note</div>
+	<p>Routing must be enabled to associate Template with Nodes.</p>
+</div>
+
+### Ordering Template Preferences
+
+When viewing your Template Preferences, you can drag and drop the order of the templates. This affects the order they are seen in when selecting them for use on a Node. After sorting the order of your templates via drag and drop, be sure to click the save button at the bottom of the form.
+
+### Deleting Template Preferences
+
+You can also delete one or more Template Preferences at a time. To delete Template Preferences, select the Delete checkbox for one or more templates and click the save button at the bottom of the form.
+
+### Template Preferences Options
+
+Template Preferences have learned a few new tricks in Construct 2. You can now designate channels a template can list entries from in addition to specifying a channel to make entries available on a one to one basis with the template.
+
+And two new toggles for specifying the template as a listing template or a listing category template are here as well.
+
+![Adding a Template Preference](/assets/img/documentation/construct/adding-template-preference.jpg)
+
+#### Construct Template Name
+
+As you would expect, this is the friendly name of your template. It is the name users see when they select the template to associate it with a Node.
+
+#### ExpressionEngine Template
+
+This is the EE template for this Template Preference.
+
+#### Channels for this template
+
+Choose which channels to make entries available to this template from.
+
+#### Listing channels for this template
+
+Choose which channels can this template list entries from.
+
+#### Listing entry template
+
+Specify whether this template can be used for single entries (single entries from the listing channel).
+
+#### Listing category template
+
+Choose whether this template can be used to list category entries.

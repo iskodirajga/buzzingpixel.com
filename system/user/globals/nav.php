@@ -21,25 +21,29 @@ return [
 			'title' => 'ee add-ons',
 			'link' => '/ee-add-ons',
 			'subnav' => [
-				'collective' => [
-					'title' => 'Collective',
-					'link' => '/ee-add-ons/collective',
+				'construct' => [
+					'title' => 'Construct',
+					'link' => '/ee-add-ons/construct',
 					'subnav' => [
 						'about' => [
 							'title' => 'about',
-							'link' => '/ee-add-ons/collective'
+							'link' => '/ee-add-ons/construct'
 						],
 						'documentation' => [
 							'title' => 'documentation',
-							'link' => '/ee-add-ons/collective/documentation'
+							'link' => '/ee-add-ons/construct/documentation'
+						],
+						'demo-video' => [
+							'title' => 'demo video',
+							'link' => '/ee-add-ons/construct/demo-video'
 						],
 						'changelog' => [
 							'title' => 'changelog',
-							'link' => '/ee-add-ons/collective/changelog'
+							'link' => '/ee-add-ons/construct/changelog'
 						],
 						'support' => [
 							'title' => 'support',
-							'link' => '/ee-add-ons/collective/support'
+							'link' => '/ee-add-ons/construct/support'
 						]
 					]
 				],
@@ -62,6 +66,28 @@ return [
 						'support' => [
 							'title' => 'support',
 							'link' => '/ee-add-ons/category-construct/support'
+						]
+					]
+				],
+				'collective' => [
+					'title' => 'Collective',
+					'link' => '/ee-add-ons/collective',
+					'subnav' => [
+						'about' => [
+							'title' => 'about',
+							'link' => '/ee-add-ons/collective'
+						],
+						'documentation' => [
+							'title' => 'documentation',
+							'link' => '/ee-add-ons/collective/documentation'
+						],
+						'changelog' => [
+							'title' => 'changelog',
+							'link' => '/ee-add-ons/collective/changelog'
+						],
+						'support' => [
+							'title' => 'support',
+							'link' => '/ee-add-ons/collective/support'
 						]
 					]
 				],
@@ -106,28 +132,6 @@ return [
 						'support' => [
 							'title' => 'support',
 							'link' => '/ee-add-ons/typographee/support'
-						]
-					]
-				],
-				'construct' => [
-					'title' => 'Construct',
-					'link' => '/ee-add-ons/construct',
-					'subnav' => [
-						'about' => [
-							'title' => 'about',
-							'link' => '/ee-add-ons/construct'
-						],
-						'documentation' => [
-							'title' => 'documentation',
-							'link' => '/ee-add-ons/construct/documentation'
-						],
-						'changelog' => [
-							'title' => 'changelog',
-							'link' => '/ee-add-ons/construct/changelog'
-						],
-						'support' => [
-							'title' => 'support',
-							'link' => '/ee-add-ons/construct/support'
 						]
 					]
 				],
