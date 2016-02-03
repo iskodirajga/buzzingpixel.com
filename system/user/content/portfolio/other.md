@@ -4,10 +4,6 @@ Template: _page
 HeaderBackgroundImage: /assets/img/banners/whitetail-banner.png
 ---
 
-## [Starbucks News](https://news.starbucks.com/)
-
-**Roll:** Maintenance and support
-
 ## [Caddis Developer Standards](https://developers.caddis.co/standards/)
 
 As a senior developer at Caddis, I influenced the direction and contributed heavily to the development standards, from which my own dev standards have evolved.
