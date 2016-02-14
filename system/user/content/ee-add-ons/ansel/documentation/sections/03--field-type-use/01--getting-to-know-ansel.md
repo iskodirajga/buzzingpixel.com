@@ -8,3 +8,5 @@ Ansel tries to make users feel right at home in the publishing workflow and expe
 	<div class="content-blocks__note-title">Note</div>
 	<p>Though all screenshots used in the documentation are from the ExpressionEngine 3 version of Ansel, the functionality of Ansel for ExpressionEngine 2 is identical and things are generally in the same place even if they look slightly different. Where there are differences worth noting, they will be noted.</p>
 </div>
+
+![Ansel Field](/assets/img/documentation/ansel/ansel-field.png)
