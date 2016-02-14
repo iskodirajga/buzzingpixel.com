@@ -4,6 +4,8 @@ Title: Configuring
 
 Ansel has a few settings you may want to look at before diving in to making your Ansel fields.
 
+![Ansel Settings](/assets/img/documentation/ansel/ansel-settings.png)
+
 ### License Key
 
 The first thing you will want to do is visit the License page and enter your license key from your purchase on devote:ee.
