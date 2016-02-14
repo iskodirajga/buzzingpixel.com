@@ -18,3 +18,5 @@ Ansel is compatible with the following contexts, and regardless of the context u
 [Grid]: https://docs.expressionengine.com/latest/fieldtypes/grid.html
 [Blocks]: https://burgers.software/blocks
 [Low Variables]: http://gotolow.com/addons/low-variables
+
+![Field Type Settings](/assets/img/documentation/ansel/ansel-field-settings.png)
