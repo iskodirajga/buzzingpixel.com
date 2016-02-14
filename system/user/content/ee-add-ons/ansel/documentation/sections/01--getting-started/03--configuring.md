@@ -36,11 +36,16 @@ This field is blank on new installs. If you wish all image URLs to be served fro
 
 The config override item is `$config['ansel']['default_host']`.
 
-#### Image cache location
+#### Image cache location and Image cache url
 
-This must be a full server path to a publicly URL accessible directory Ansel can use for caching images that are resized on the fly. By default, it will be `path/to/public/dir/images/ansel_image_cache/`. Make sure this directory has the appropriate permissions for PHP to write to it.
+The Image cache location settings must be a full server path to a publicly URL accessible directory Ansel can use for caching images that are resized on the fly. New installations set this to the default value  `path/to/public/dir/images/ansel_image_cache/`. Make sure this directory has the appropriate permissions for PHP to write to it.
 
-The config override item is `$config['ansel']['image_cache_location']`.
+And the Image cache url must be the publicly accessible URL of that cache directory. The new install default value is `/images/ansel_image_cache/`.
+
+The config override items are:
+
+`$config['ansel']['image_cache_location']`  
+`$config['ansel']['image_cache_url']`
 
 #### Default maximum quantity
 
