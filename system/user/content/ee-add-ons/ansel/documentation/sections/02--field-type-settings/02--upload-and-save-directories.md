@@ -10,5 +10,5 @@ The save directory is where Ansel saves images the user crops or otherwise adds 
 
 <div class="content-blocks__note">
 	<div class="content-blocks__note-title">Note</div>
-	<p>There are a few different approaches and ways of thinking about this. You could create a source and save directory for each field and keep everything separate, or you could create one general upload directory for all source images, and a save directory for each field. Both approaches has its merits. Either way, it is highly recommended that you create a save directory for each field you create. This allows you to keep your images well serrated and create unique image manipulations per directory and field as well.</p>
+	<p>There are a few different approaches and ways of thinking about this. You could create a source and save directory for each field and keep everything separate, or you could create one general upload directory for all source images, and a save directory for each field. Either approach has its merits. Either way, it is highly recommended that you create a save directory for each field you create. This allows you to keep your images well segregated and create unique image manipulations per directory and field as well.</p>
 </div>
