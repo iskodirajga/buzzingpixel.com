@@ -91,6 +91,28 @@ return [
 						]
 					]
 				],
+				'field-limits' => [
+					'title' => 'Field Limits',
+					'link' => '/ee-add-ons/field-limits',
+					'subnav' => [
+						'about' => [
+							'title' => 'about',
+							'link' => '/ee-add-ons/field-limits'
+						],
+						'documentation' => [
+							'title' => 'documentation',
+							'link' => '/ee-add-ons/field-limits/documentation'
+						],
+						'changelog' => [
+							'title' => 'changelog',
+							'link' => '/ee-add-ons/field-limits/changelog'
+						],
+						'support' => [
+							'title' => 'support',
+							'link' => '/ee-add-ons/field-limits/support'
+						]
+					]
+				],
 				'mandrill-mailer' => [
 					'title' => 'Mandrill Mailer',
 					'link' => '/ee-add-ons/mandrill-mailer',
