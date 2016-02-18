@@ -5,7 +5,7 @@ SubTitle: for ExpressionEngine
 HeaderText: Create Input and Textarea fields with limits.
 Template: _software/about
 HeaderBackgroundImage: /assets/img/banners/css-code.jpg
-ListingImage: /assets/img/software-listing/mandrill-mailer-code.jpg
+ListingImage: /assets/img/software-listing/field-limits-publish-page.png
 ListingText: Create Input and Textarea fields with limits.
 ActionLink: https://github.com/tjdraper/ee-field-limits/releases
 ActionText: Download on Github »
