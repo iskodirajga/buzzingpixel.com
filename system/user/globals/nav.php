@@ -113,6 +113,28 @@ return [
 						]
 					]
 				],
+				'template-sync' => [
+					'title' => 'Template Sync',
+					'link' => '/ee-add-ons/template-sync',
+					'subnav' => [
+						'about' => [
+							'title' => 'about',
+							'link' => '/ee-add-ons/template-sync'
+						],
+						'documentation' => [
+							'title' => 'documentation',
+							'link' => '/ee-add-ons/template-sync/documentation'
+						],
+						'changelog' => [
+							'title' => 'changelog',
+							'link' => '/ee-add-ons/template-sync/changelog'
+						],
+						'support' => [
+							'title' => 'support',
+							'link' => '/ee-add-ons/template-sync/support'
+						]
+					]
+				],
 				'mandrill-mailer' => [
 					'title' => 'Mandrill Mailer',
 					'link' => '/ee-add-ons/mandrill-mailer',
