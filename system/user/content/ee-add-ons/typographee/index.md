@@ -7,7 +7,7 @@ Template: _software/about
 HeaderBackgroundImage: /assets/img/banners/css-code.jpg
 ListingImage: /assets/img/software-listing/css-code.jpg
 ListingText: Parse content through ExpressionEngine typography class.
-ActionLink: https://github.com/tjdraper/typographee
+ActionLink: https://github.com/tjdraper/typographee/releases
 ActionText: Download on Github »
 PreRelease: false
 Segments:
