@@ -1,6 +1,6 @@
 ---
 Title: Pillster Documentation
-SeoTitle: Pillster Documentation
+SeoTitle: Installing, Configuring, and Using Pillster
 Template: _software/documentation
-HeaderBackgroundImage: /assets/img/banners/pillster-screen-shot-enlarged.jpg
+HeaderBackgroundImage: /assets/img/banners/pillster-wide-blurred.png
 ---
