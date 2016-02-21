@@ -7,7 +7,7 @@ Template: _software/about
 HeaderBackgroundImage: /assets/img/banners/css-code.jpg
 ListingImage: /assets/img/software-listing/mandrill-mailer-code.jpg
 ListingText: Easily set up an email form to send via the Mandrill API.
-ActionLink: https://github.com/tjdraper/MandrillMailer
+ActionLink: https://github.com/tjdraper/MandrillMailer/releases
 ActionText: Download on Github »
 PreRelease: false
 Segments:
