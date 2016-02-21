@@ -179,28 +179,6 @@ return [
 						]
 					]
 				],
-				'last-edit-date' => [
-					'title' => 'Last Edit Date',
-					'link' => '/ee-add-ons/last-edit-date',
-					'subnav' => [
-						'about' => [
-							'title' => 'about',
-							'link' => '/ee-add-ons/last-edit-date'
-						],
-						'documentation' => [
-							'title' => 'documentation',
-							'link' => '/ee-add-ons/last-edit-date/documentation'
-						],
-						'changelog' => [
-							'title' => 'changelog',
-							'link' => '/ee-add-ons/last-edit-date/changelog'
-						],
-						'support' => [
-							'title' => 'support',
-							'link' => '/ee-add-ons/last-edit-date/support'
-						]
-					]
-				],
 				'pillster' => [
 					'title' => 'Pillster',
 					'link' => '/ee-add-ons/pillster',
@@ -220,6 +198,28 @@ return [
 						'support' => [
 							'title' => 'support',
 							'link' => '/ee-add-ons/pillster/support'
+						]
+					]
+				],
+				'last-edit-date' => [
+					'title' => 'Last Edit Date',
+					'link' => '/ee-add-ons/last-edit-date',
+					'subnav' => [
+						'about' => [
+							'title' => 'about',
+							'link' => '/ee-add-ons/last-edit-date'
+						],
+						'documentation' => [
+							'title' => 'documentation',
+							'link' => '/ee-add-ons/last-edit-date/documentation'
+						],
+						'changelog' => [
+							'title' => 'changelog',
+							'link' => '/ee-add-ons/last-edit-date/changelog'
+						],
+						'support' => [
+							'title' => 'support',
+							'link' => '/ee-add-ons/last-edit-date/support'
 						]
 					]
 				]
