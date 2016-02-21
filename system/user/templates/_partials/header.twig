@@ -49,9 +49,11 @@
 
 					{# Set General Header Content if else #}
 					{% else %}
-						<h1 class="site-header__heading">
-							{{- pageTitle -}}
-						</h1>
+						{% if pageTitle %}
+							<h1 class="site-header__heading">
+								{{- pageTitle -}}
+							</h1>
+						{% endif %}
 						{% if pageSubTitle %}
 							<h2 class="site-header__subheading">
 								{{- pageSubTitle -}}

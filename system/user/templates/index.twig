@@ -2,7 +2,9 @@
 
 {%- block headerContent -%}
 	<div class="home-header">
-		<h1 class="home-header__title">{{ yaml.BannerHeadline }}</h1>
+		{% if yaml.BannerHeadline %}
+			<h1 class="home-header__title">{{ yaml.BannerHeadline }}</h1>
+		{% endif %}
 		<div class="home-header__row">
 			<div class="home-header__left-col">
 				<img src="{{ yaml.PrimaryBannerImage }}" class="computer-left-align">
