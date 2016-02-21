@@ -1,7 +1,5 @@
 ---
 Title: DevDemon Updater Compatible
-FloatingImage: /assets/img/documentation/construct/construct-updater.png
-FloatingImageSide: right
 ---
 
 Last Edit Date is fully compatible with [DevDemon Updater](http://www.devdemon.com/expressionengine-addons/updater) and that is the simplest way to install or update Last Edit Date.
