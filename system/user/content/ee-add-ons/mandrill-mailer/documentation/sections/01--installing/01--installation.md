@@ -1,9 +1,12 @@
 ---
-Title: Installation
+Title: Installing or Updating
 ---
 
-1. Unzip the Mandrill Mailer zip file you downloaded from GitHub.
-2. Copy `system/user/addons/mandrill_mailer` to your ExpressionEngine instance (if you are updating, overwrite the `mandrill_mailer` directory in this location).
-3. Navigate to the Add-On Manager in the Control pannel and click install on the Mandrill Mailer item in the Third Party Add-Ons section.
+1. Download the latest release from the [GitHub Releases] page.
+2. Copy `system/user/addons/mandrill_mailer` to the same directory location in your EE instance
+3. Now log in to your ExpressionEngine control panel and navigate to the Add-on Manager
+4. In the Third Party Add-Ons section, locate Mandrill Mailer in the list and click Install or Update
 
 That’s it. Mandrill Mailer is now ready for you to begin using.
+
+[GitHub Releases]: https://github.com/tjdraper/MandrillMailer/releases
