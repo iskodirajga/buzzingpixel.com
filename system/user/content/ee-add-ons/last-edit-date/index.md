@@ -7,7 +7,7 @@ Template: _software/about
 HeaderBackgroundImage: /assets/img/banners/css-code.jpg
 ListingImage: /assets/img/software-listing/last-edit-date.jpg
 ListingText: Sometimes, you just need to get the most recent edit date from a channel or group of channels, or maybe even a specific entry. Last Edit Date has you covered!
-ActionLink: https://github.com/tjdraper/Last-Edit-Date
+ActionLink: https://github.com/tjdraper/Last-Edit-Date/releases
 ActionText: Download on Github »
 PreRelease: false
 Segments:
