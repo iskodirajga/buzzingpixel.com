@@ -1,7 +1,7 @@
 ---
 Title: About BuzzingPixel
 SeoTitle: Web Development, ExpressionEngine Expertise, and General Web Knowlege
-SeoDescription: BuzzingPixel specializes in custom web development, add-ons for ExpressionEngine and Craft, and custom web development
+SeoDescription: BuzzingPixel specializes in custom web development and add-ons for ExpressionEngine and Craft
 HeaderBackgroundImage: /assets/img/heroes/collective-home-hero.jpg
 BannerHeadline: 
 PrimaryBannerImage: /assets/img/home/construct-computer-screen.png
