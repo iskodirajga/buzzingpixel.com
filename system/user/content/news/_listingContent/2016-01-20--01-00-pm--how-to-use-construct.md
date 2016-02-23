@@ -10,7 +10,7 @@ Let's first take a look at how to create menus with Construct.
 
 If you have a [fresh installation of Construct][Construct installation docs], you will need to create one or more trees for your nodes (navigation items) to live in. If you have more than one menu on your site — say very different menus for the header and footer — you might want to create two trees such as Header and Footer.
 
-[Construct installation docs]: /ee-add-ons/construct/documentation
+[Construct installation docs]: /software/construct/documentation
 
 When creating trees, you can assign which member groups will have access to those trees. Non-Super Admins will only see the trees you give them access to and will not have access to any other settings. This makes Construct a great tool for separating responsibilities among content editors and site managers as needed.
 
@@ -57,7 +57,7 @@ Now that we have a tree or two with nodes in them, we need to output those nodes
 </pre>
 </div>
 
-[construct tags]: /ee-add-ons/construct/documentation/template-tags
+[construct tags]: /software/construct/documentation/template-tags
 
 So let’s deconstruct what's going on there. It’s all pretty easy to grasp if you are used to working with EE templates.
 
@@ -118,7 +118,7 @@ After you have created some templates, you also need to add them to any trees yo
 
 Once a template and entry are selected for a node, when you visit that Node's URI, Construct will serve that template and make [certain variables][construct route variables] available to the template so you can hook up the Channel Entries tag. Here is a very simple example:
 
-[construct route variables]: /ee-add-ons/construct/documentation/routing#route-variables
+[construct route variables]: /software/construct/documentation/routing#route-variables
 
 <div class="content-blocks__pre-wrapper content-blocks__pre-wrapper--example">
 <pre class="content-blocks__pre content-blocks__pre--example language-ee">

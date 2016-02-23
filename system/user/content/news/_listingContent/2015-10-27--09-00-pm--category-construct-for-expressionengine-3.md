@@ -8,4 +8,4 @@ ExpressionEngine 3 obviated the Control Panel functionality of Category Construc
 
 The price has also been reduced to $15.00 and it's available for you to buy now!
 
-You can check out the [changelog here](/ee-add-ons/category-construct/changelog).
+You can check out the [changelog here](/software/category-construct/changelog).

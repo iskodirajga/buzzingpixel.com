@@ -19,11 +19,11 @@ As a senior developer at Caddis, I was responsible for overseeing many projects 
 
 ## Development and On-Going Maintenance
 
-- [Collective](/ee-add-ons/collective)
-- [Category Construct](/ee-add-ons/category-construct)
-- [Construct](/ee-add-ons/construct)
-- [Mandrill Mailer](/ee-add-ons/mandrill-mailer)
-- [Typographee](/ee-add-ons/typographee)
+- [Collective](/software/collective)
+- [Category Construct](/software/category-construct)
+- [Construct](/software/construct)
+- [Mandrill Mailer](/software/mandrill-mailer)
+- [Typographee](/software/typographee)
 - [Template Sync](https://github.com/tjdraper/template-sync/tree/develop)
 - [JSON EEncoder](https://github.com/tjdraper/JSON-EEncoder)
 

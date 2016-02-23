@@ -9,7 +9,7 @@ BannerSubHeading: Construct
 BannerSubHeading2: completely rebuilt for ExpressionEngine 3
 BannerContent: Easily create menus, pages, nested pages, manage routing, and more!
 BannerActionButton: Watch the Video
-BannerActionLink: /ee-add-ons/construct/demo-video
+BannerActionLink: /software/construct/demo-video
 Items:
   webdev:
     title: Web Development

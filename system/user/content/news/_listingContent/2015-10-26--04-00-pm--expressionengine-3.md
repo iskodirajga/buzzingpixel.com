@@ -8,23 +8,23 @@ BuzzingPixel add-on prep/conversion for ExpressionEngine 3 is well under way. In
 
 ## Already Available
 
-- [Typographee](/ee-add-ons/typographee/documentation) (free)
-- [Mandrill Mailer](/ee-add-ons/mandrill-mailer) (free)
-- [Collective](/ee-add-ons/collective) ($18.00/free update for existing users)
+- [Typographee](/software/typographee/documentation) (free)
+- [Mandrill Mailer](/software/mandrill-mailer) (free)
+- [Collective](/software/collective) ($18.00/free update for existing users)
 
 ## Currently Underway
 
-- [Category Construct](/ee-add-ons/category-construct)  
+- [Category Construct](/software/category-construct)  
 **[UPDATE: Category Construct is now available for ExpressionEngine 3 for $15.00.](/news/category-construct-for-expressionengine-3)**  
 While ExpressionEngine 3 happily obviated the Control Panel functionality of Category Construct, the primary reason it was written was for the template tags and being able to output infinitely nested categories in a sane and easy to understand manner. Category Construct for ExpressionEngine 3 will be template tags only. It is currently $20.00. Since the Control Panel functionality is coming out for the next version, the price will be reduced by some amount.
 
 ## Planned
 
-- [Construct](/ee-add-ons/construct) ($40.00)  
+- [Construct](/software/construct) ($40.00)  
 This is an important add-on and still very much needed. Conversion will begin very soon but some major work will need to be done. I have plans for new features as well as integration with the new look and feel of the ExpressionEngine control panel. The current version is something I'm proud of, but the next version is going to be even better! I can't give a timeline right now but stay tuned!
-- [Last Edit Date](/ee-add-ons/last-edit-date) (free)  
+- [Last Edit Date](/software/last-edit-date) (free)  
 This will be coming for EE 3, but I've run into some things that I'm waiting on feedback from EllisLab on. It will be soon though.
-- [Pillster](/ee-add-ons/pillster) (free)  
+- [Pillster](/software/pillster) (free)  
 I believe this is still needed but the hook it relies on is not in the initial release of EE 3. Hooks are something that is in discussion with EllisLab and developers. I expect this add-on to return in some form as soon as I can.
 
 ## Beta

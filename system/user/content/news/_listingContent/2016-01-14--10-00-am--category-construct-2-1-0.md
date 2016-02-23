@@ -25,5 +25,5 @@ As always, 2.1.0 is a free update to existing users and if you have already purc
 To learn more about Category Construct, you can [head over to learn more][Cateogry Construct] and [read the documentation][Category Construct Docs].
 
 [Category Construct Devotee]: https://devot-ee.com/add-ons/category-construct
-[Cateogry Construct]: /ee-add-ons/category-construct
-[Category Construct Docs]: /ee-add-ons/category-construct/documentation
+[Cateogry Construct]: /software/category-construct
+[Category Construct Docs]: /software/category-construct/documentation

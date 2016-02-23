@@ -17,209 +17,209 @@ return [
 			'link' => '/portfolio',
 			'subnav' => []
 		],
-		'ee-add-ons' =>[
-			'title' => 'ee add-ons',
-			'link' => '/ee-add-ons',
+		'software' =>[
+			'title' => 'software',
+			'link' => '/software',
 			'subnav' => [
 				'construct' => [
 					'title' => 'Construct',
-					'link' => '/ee-add-ons/construct',
+					'link' => '/software/construct',
 					'subnav' => [
 						'about' => [
 							'title' => 'about',
-							'link' => '/ee-add-ons/construct'
+							'link' => '/software/construct'
 						],
 						'documentation' => [
 							'title' => 'documentation',
-							'link' => '/ee-add-ons/construct/documentation'
+							'link' => '/software/construct/documentation'
 						],
 						'demo-video' => [
 							'title' => 'demo video',
-							'link' => '/ee-add-ons/construct/demo-video'
+							'link' => '/software/construct/demo-video'
 						],
 						'changelog' => [
 							'title' => 'changelog',
-							'link' => '/ee-add-ons/construct/changelog'
+							'link' => '/software/construct/changelog'
 						],
 						'support' => [
 							'title' => 'support',
-							'link' => '/ee-add-ons/construct/support'
+							'link' => '/software/construct/support'
 						]
 					]
 				],
 				'category-construct' => [
 					'title' => 'Category Construct',
-					'link' => '/ee-add-ons/category-construct',
+					'link' => '/software/category-construct',
 					'subnav' => [
 						'about' => [
 							'title' => 'about',
-							'link' => '/ee-add-ons/category-construct'
+							'link' => '/software/category-construct'
 						],
 						'documentation' => [
 							'title' => 'documentation',
-							'link' => '/ee-add-ons/category-construct/documentation'
+							'link' => '/software/category-construct/documentation'
 						],
 						'changelog' => [
 							'title' => 'changelog',
-							'link' => '/ee-add-ons/category-construct/changelog'
+							'link' => '/software/category-construct/changelog'
 						],
 						'support' => [
 							'title' => 'support',
-							'link' => '/ee-add-ons/category-construct/support'
+							'link' => '/software/category-construct/support'
 						]
 					]
 				],
 				'collective' => [
 					'title' => 'Collective',
-					'link' => '/ee-add-ons/collective',
+					'link' => '/software/collective',
 					'subnav' => [
 						'about' => [
 							'title' => 'about',
-							'link' => '/ee-add-ons/collective'
+							'link' => '/software/collective'
 						],
 						'documentation' => [
 							'title' => 'documentation',
-							'link' => '/ee-add-ons/collective/documentation'
+							'link' => '/software/collective/documentation'
 						],
 						'changelog' => [
 							'title' => 'changelog',
-							'link' => '/ee-add-ons/collective/changelog'
+							'link' => '/software/collective/changelog'
 						],
 						'support' => [
 							'title' => 'support',
-							'link' => '/ee-add-ons/collective/support'
+							'link' => '/software/collective/support'
 						]
 					]
 				],
 				'field-limits' => [
 					'title' => 'Field Limits',
-					'link' => '/ee-add-ons/field-limits',
+					'link' => '/software/field-limits',
 					'subnav' => [
 						'about' => [
 							'title' => 'about',
-							'link' => '/ee-add-ons/field-limits'
+							'link' => '/software/field-limits'
 						],
 						'documentation' => [
 							'title' => 'documentation',
-							'link' => '/ee-add-ons/field-limits/documentation'
+							'link' => '/software/field-limits/documentation'
 						],
 						'changelog' => [
 							'title' => 'changelog',
-							'link' => '/ee-add-ons/field-limits/changelog'
+							'link' => '/software/field-limits/changelog'
 						],
 						'support' => [
 							'title' => 'support',
-							'link' => '/ee-add-ons/field-limits/support'
+							'link' => '/software/field-limits/support'
 						]
 					]
 				],
 				'template-sync' => [
 					'title' => 'Template Sync',
-					'link' => '/ee-add-ons/template-sync',
+					'link' => '/software/template-sync',
 					'subnav' => [
 						'about' => [
 							'title' => 'about',
-							'link' => '/ee-add-ons/template-sync'
+							'link' => '/software/template-sync'
 						],
 						'documentation' => [
 							'title' => 'documentation',
-							'link' => '/ee-add-ons/template-sync/documentation'
+							'link' => '/software/template-sync/documentation'
 						],
 						'changelog' => [
 							'title' => 'changelog',
-							'link' => '/ee-add-ons/template-sync/changelog'
+							'link' => '/software/template-sync/changelog'
 						],
 						'support' => [
 							'title' => 'support',
-							'link' => '/ee-add-ons/template-sync/support'
+							'link' => '/software/template-sync/support'
 						]
 					]
 				],
 				'mandrill-mailer' => [
 					'title' => 'Mandrill Mailer',
-					'link' => '/ee-add-ons/mandrill-mailer',
+					'link' => '/software/mandrill-mailer',
 					'subnav' => [
 						'about' => [
 							'title' => 'about',
-							'link' => '/ee-add-ons/mandrill-mailer'
+							'link' => '/software/mandrill-mailer'
 						],
 						'documentation' => [
 							'title' => 'documentation',
-							'link' => '/ee-add-ons/mandrill-mailer/documentation'
+							'link' => '/software/mandrill-mailer/documentation'
 						],
 						'changelog' => [
 							'title' => 'changelog',
-							'link' => '/ee-add-ons/mandrill-mailer/changelog'
+							'link' => '/software/mandrill-mailer/changelog'
 						],
 						'support' => [
 							'title' => 'support',
-							'link' => '/ee-add-ons/mandrill-mailer/support'
+							'link' => '/software/mandrill-mailer/support'
 						]
 					]
 				],
 				'typographee' => [
 					'title' => 'Typographee',
-					'link' => '/ee-add-ons/typographee',
+					'link' => '/software/typographee',
 					'subnav' => [
 						'about' => [
 							'title' => 'about',
-							'link' => '/ee-add-ons/typographee'
+							'link' => '/software/typographee'
 						],
 						'documentation' => [
 							'title' => 'documentation',
-							'link' => '/ee-add-ons/typographee/documentation'
+							'link' => '/software/typographee/documentation'
 						],
 						'changelog' => [
 							'title' => 'changelog',
-							'link' => '/ee-add-ons/typographee/changelog'
+							'link' => '/software/typographee/changelog'
 						],
 						'support' => [
 							'title' => 'support',
-							'link' => '/ee-add-ons/typographee/support'
+							'link' => '/software/typographee/support'
 						]
 					]
 				],
 				'pillster' => [
 					'title' => 'Pillster',
-					'link' => '/ee-add-ons/pillster',
+					'link' => '/software/pillster',
 					'subnav' => [
 						'about' => [
 							'title' => 'about',
-							'link' => '/ee-add-ons/pillster'
+							'link' => '/software/pillster'
 						],
 						'documentation' => [
 							'title' => 'documentation',
-							'link' => '/ee-add-ons/pillster/documentation'
+							'link' => '/software/pillster/documentation'
 						],
 						'changelog' => [
 							'title' => 'changelog',
-							'link' => '/ee-add-ons/pillster/changelog'
+							'link' => '/software/pillster/changelog'
 						],
 						'support' => [
 							'title' => 'support',
-							'link' => '/ee-add-ons/pillster/support'
+							'link' => '/software/pillster/support'
 						]
 					]
 				],
 				'last-edit-date' => [
 					'title' => 'Last Edit Date',
-					'link' => '/ee-add-ons/last-edit-date',
+					'link' => '/software/last-edit-date',
 					'subnav' => [
 						'about' => [
 							'title' => 'about',
-							'link' => '/ee-add-ons/last-edit-date'
+							'link' => '/software/last-edit-date'
 						],
 						'documentation' => [
 							'title' => 'documentation',
-							'link' => '/ee-add-ons/last-edit-date/documentation'
+							'link' => '/software/last-edit-date/documentation'
 						],
 						'changelog' => [
 							'title' => 'changelog',
-							'link' => '/ee-add-ons/last-edit-date/changelog'
+							'link' => '/software/last-edit-date/changelog'
 						],
 						'support' => [
 							'title' => 'support',
-							'link' => '/ee-add-ons/last-edit-date/support'
+							'link' => '/software/last-edit-date/support'
 						]
 					]
 				]
