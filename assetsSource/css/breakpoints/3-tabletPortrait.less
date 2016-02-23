@@ -20,66 +20,6 @@
 	&__logo {
 		.z-index(301);
 	}
-	&__hamburger {
-		.hide();
-	}
-	&__navigation {
-		.align(right);
-		.align(top);
-		.background(none);
-		.fill();
-		.padding(right; @bumperPadding);
-		.right(0);
-	}
-	&__navigation-sub-list {
-		.absolute(80px; 0);
-		.align(left);
-		.background(dark; .75);
-		.hide();
-		.margin(left; 26px);
-		.min-width(160px);
-		.z-index(300);
-		&.is-open {
-			.show();
-		}
-	}
-	&__navigation-list-item {
-		.inline-block();
-		.padding(left; 26px);
-		.relative();
-		&.is-open {
-			.relative();
-			&:before {
-				.absolute(false; 50%; -16px);
-				.content();
-				.caret(up; fade(@black, 75%); 10px; 7px);
-				.margin(right; -20px);
-			}
-		}
-	}
-	&__navigation-link {
-		.border(bottom; transparent; 2px);
-		.lowercase();
-		.padding(horizontal; 0);
-		.padding(vertical; 30px; 4px);
-		&--active,
-		&:hover {
-			.background(none);
-			.border-color(@bzpxlWhite);
-		}
-		&:hover:not(.site-header__navigation-link--active) {
-			.border-color(@bzpxlOrange);
-			.color(@bzpxlOrange);
-		}
-	}
-	&__navigation-sub-link {
-		&--active {
-			.background(@darkerGray);
-			&:hover {
-				.background(@darkerGray);
-			}
-		}
-	}
 	&__logo {
 		.spaced(30px);
 	}

@@ -12,6 +12,11 @@ return [
 			'link' => '/news',
 			'subnav' => []
 		],
+		'custom-add-ons' => [
+			'title' => 'custom add-ons',
+			'link' => '/custom-add-ons',
+			'subnav' => []
+		],
 		'portfolio' => [
 			'title' => 'portfolio',
 			'link' => '/portfolio',

@@ -32,7 +32,7 @@
 			F.screen.map([
 				{
 					// We need to close the menu if we reach breakpoint 3
-					min: 3,
+					min: 4,
 
 					// No need to do it on page load
 					init: false,
