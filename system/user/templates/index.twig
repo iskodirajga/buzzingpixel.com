@@ -46,6 +46,12 @@
 							</div>
 						{% endfor %}
 					</div>
+				{% elseif item.style == "centered" %}
+					<div class="home-page-content__latest-news">
+						<div class="home-page-content__latest-news-item">
+							{{ item.text|markdown|raw }}
+						</div>
+					</div>
 				{% else %}
 					<div class="{% if loop.index is even %}home-page-content__left-image{% else %}home-page-content__right-image{% endif %}">
 						<img src="{{ item.image }}">
