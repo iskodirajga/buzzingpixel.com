@@ -2,8 +2,6 @@
 Title: Tag Pair Parameters
 ---
 
-Note all variable examples assume the default namespace of `img`. Use your custom namespace if you have set the namespace parameter.
-
 The following parameters are available to all tags:
 
 <div class="content-blocks__note software-docs-blocks__quick-ref">

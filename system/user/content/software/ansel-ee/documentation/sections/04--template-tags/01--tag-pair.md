@@ -2,7 +2,7 @@
 Title: Tag Pair
 ---
 
-The tag pair is how you output Ansel images. Whether you are using the custom field tag within a channel entry tag pair, a grid field tag pair, a blocks field tag pair, or a Low Variables tag pair, or the stand alone tag pair, usage is almost identical. In fact, the only real difference is with the stand alone tag pair, which has just a few extra parameters available to it.
+The tag pair is how you output Ansel images. Whether you are using the custom field tag within a channel entry tag pair, a Grid field tag pair, a Blocks field tag pair, a Low Variables tag pair, or the stand alone tag pair, usage is almost identical across the tags. In fact, the only real difference is with the stand alone tag pair, which has just a few extra parameters available to it.
 
 <div class="content-blocks__pre-wrapper content-blocks__pre-wrapper--example">
 <pre class="content-blocks__pre content-blocks__pre--example  language-ee">

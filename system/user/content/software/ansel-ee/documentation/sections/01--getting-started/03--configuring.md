@@ -10,8 +10,8 @@ Ansel has a few settings you may want to look at before diving in to making your
 
 The first thing you will want to do is visit the License page and enter your license key from your purchase on devote:ee.
 
-- In ExpressionEngine 2, the license page can be located by clicking on "Ansel" from the list of Modules, then clicking on the "License" tab
-- In ExpressionEngine 3, the license page can by licated by clicking on "Ansel" from the list of Add-ons in the Add-on Manager, then clicking on the "License" link in the sidebar
+- In ExpressionEngine 2, the license page can be located by clicking on “Ansel” from the list of Modules, then clicking on the “License” tab
+- In ExpressionEngine 3, the license page can by licated by clicking on “Ansel” from the list of Add-ons in the Add-on Manager, then clicking on the “License” link in the sidebar
 
 <div class="content-blocks__note">
 	<div class="content-blocks__note-title">Remember</div>
@@ -38,7 +38,7 @@ The config override item is `$config['ansel']['default_host']`.
 
 #### Image cache location and Image cache url
 
-The Image cache location settings must be a full server path to a publicly URL accessible directory Ansel can use for caching images that are resized on the fly. New installations set this to the default value  `path/to/public/dir/images/ansel_image_cache/`. Make sure this directory has the appropriate permissions for PHP to write to it.
+The Image cache location setting must be a full server path to a publicly URL accessible directory Ansel can use for caching images that are resized on the fly. New installations set this to the default value  `path/to/public/dir/images/ansel_image_cache/`. Make sure this directory has the appropriate permissions for PHP to write to it.
 
 And the Image cache url must be the publicly accessible URL of that cache directory. The new install default value is `/images/ansel_image_cache/`.
 
