@@ -9,15 +9,15 @@ return [
 		],
 		'custom-development' => [
 			'title' => 'custom development',
-			'link' => 'custom-websites',
+			'link' => '/custom-websites',
 			'subnav' => [
 				'custom-websites' => [
 					'title' => 'Custom Websites',
-					'link' => 'custom-websites'
+					'link' => '/custom-websites'
 				],
 				'custom-add-ons' => [
 					'title' => 'Custom CMS Add-ons',
-					'link' => 'custom-add-ons'
+					'link' => '/custom-add-ons'
 				]
 			],
 		],
