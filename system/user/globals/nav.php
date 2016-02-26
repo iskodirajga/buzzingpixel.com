@@ -7,14 +7,23 @@ return [
 			'link' => '/',
 			'subnav' => []
 		],
+		'custom-development' => [
+			'title' => 'custom development',
+			'link' => 'custom-websites',
+			'subnav' => [
+				'custom-websites' => [
+					'title' => 'Custom Websites',
+					'link' => 'custom-websites'
+				],
+				'custom-add-ons' => [
+					'title' => 'Custom CMS Add-ons',
+					'link' => 'custom-add-ons'
+				]
+			],
+		],
 		'news' => [
 			'title' => 'news',
 			'link' => '/news',
-			'subnav' => []
-		],
-		'custom-add-ons' => [
-			'title' => 'custom add-ons',
-			'link' => '/custom-add-ons',
 			'subnav' => []
 		],
 		'portfolio' => [
