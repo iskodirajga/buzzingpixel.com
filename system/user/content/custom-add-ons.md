@@ -5,7 +5,7 @@ SeoTitle: Custom CMS add-ons for ExpressionEngine and Craft by BuzzingPixel
 SeoDescription: BuzzingPixel builds custom add-ons for ExpressionEngine and Craft
 HeaderBackgroundImage: /assets/img/heroes/collective-home-hero.jpg
 BannerHeadline: 
-PrimaryBannerImage: /assets/img/home/construct-computer-screen.png
+PrimaryBannerImage: /assets/img/home/collective-computer-screen.png
 BannerSubHeading: Custom Add-Ons for Great CMSes
 BannerSubHeading2: 
 BannerContent: You have custom needs, I have custom solutions and I’m here to help! I can build any Craft or ExpressionEngine add-on you need.
