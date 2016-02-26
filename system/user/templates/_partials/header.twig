@@ -14,14 +14,14 @@
 		<ul class="site-header__navigation-list">
 			{% for item in nav %}
 				<li class="site-header__navigation-list-item js-menu-parent" data-name="{{ item.link|trim("/")|default("home") }}">
-					<a href="{{ item.link }}" class="site-header__navigation-link{% if ["/", uri.segments[0]]|join == item.link or (uri.segments[0] == 'custom-websites' and item.link == 'custom-websites') or (uri.segments[0] == 'custom-add-ons' and item.link == 'custom-websites') %} site-header__navigation-link--active{% endif %}">
+					<a href="{{ item.link }}" class="site-header__navigation-link{% if ["/", uri.segments[0]]|join == item.link or (uri.segments[0] == 'custom-websites' and item.link == '/custom-websites') or (uri.segments[0] == 'custom-add-ons' and item.link == '/custom-websites') %} site-header__navigation-link--active{% endif %}">
 						{{- item.title -}}
 					</a>
 					{% if item.subnav|length %}
 						<ul class="site-header__navigation-sub-list js-menu-child">
 							{% for subnav in item.subnav %}
 								<li class="site-header__navigation-sub-list-item">
-									<a href="{{ subnav.link }}" class="site-header__navigation-sub-link{% if (["/", uri.segments[0]]|join == item.link and ["/", uri.segments[0], "/", uri.segments[1]]|join == subnav.link) or (uri.segments[0] == 'custom-websites' and subnav.link == 'custom-websites') or (uri.segments[0] == 'custom-add-ons' and subnav.link == 'custom-add-ons') %} site-header__navigation-sub-link--active{% endif %}">
+									<a href="{{ subnav.link }}" class="site-header__navigation-sub-link{% if (["/", uri.segments[0]]|join == item.link and ["/", uri.segments[0], "/", uri.segments[1]]|join == subnav.link) or (uri.segments[0] == 'custom-websites' and subnav.link == '/custom-websites') or (uri.segments[0] == 'custom-add-ons' and subnav.link == '/custom-add-ons') %} site-header__navigation-sub-link--active{% endif %}">
 										{{- subnav.title -}}
 									</a>
 								</li>
