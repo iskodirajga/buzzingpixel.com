@@ -25,7 +25,7 @@ Items:
       I love delighting people, reveling in the details, and getting the little things right. I also work with great designers to achieve the perfect look and feel for your unique brand and needs.
   quality:
     title: Quality
-    image: /assets/img/custom-add-ons/code.jpg
+    image: /assets/img/custom-websites/easton.jpg
     text: |
       Every detail counts, every line of code matters. I don’t just cobble a bunch of plugins or themes together, I write every line of HTML and CSS for every site I build. The result is a site that is of the highest caliber and highly performant. You won’t have to worry about Google ranking you lower in search results because of site speed issues, and you won't have to worry about a great end-to-end mobile-to-desktop experience. All BuzzingPixel sites are built responsive first. That means they look great on any screen you can put it on.
 

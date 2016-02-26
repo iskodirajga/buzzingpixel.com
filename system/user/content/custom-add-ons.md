@@ -37,7 +37,7 @@ Items:
       Pillster makes the ExpressionEngine status setting when creating or editing an entry more friendly. Point and click and you’ve set the status of the entry.
   quality:
     title: Quality
-    image: /assets/img/custom-add-ons/code.jpg
+    image: /assets/img/custom-websites/php-params.png
     text: |
       I focus on quality, stability, and most importantly, ease of use. The history of PHP is a little spotty when it comes to encouraging good coding practices, but I wholly support good coding standards, object oriented architecture, well documented code, and many other best practices.
 
