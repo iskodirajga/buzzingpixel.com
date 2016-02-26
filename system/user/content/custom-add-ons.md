@@ -1,7 +1,7 @@
 ---
 Template: index
 Title: Custom Add-ons
-SeoTitle: Web Development, ExpressionEngine Expertise, and General Web Knowledge
+SeoTitle: Custom CMS add-ons for ExpressionEngine and Craft by BuzzingPixel
 SeoDescription: BuzzingPixel builds custom add-ons for ExpressionEngine and Craft
 HeaderBackgroundImage: /assets/img/heroes/collective-home-hero.jpg
 BannerHeadline: 
