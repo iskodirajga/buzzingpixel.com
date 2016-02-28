@@ -895,3 +895,51 @@ h6 {
 		.max-width(300px);
 	}
 }
+
+
+
+
+
+/*------------------------------------*\
+	# Doc Tables
+\*------------------------------------*/
+
+table {
+	.align(left);
+	.rounded(.3em);
+	.fill();
+	.margin(vertical; 20px);
+	pre {
+		.padding(0) !important;
+	}
+}
+
+.doc-table {
+	.font-size(13px);
+	th,
+	td {
+		.align(middle);
+		.padding(4px; 10px);
+	}
+	tr {
+		.background(@lightestGray);
+	}
+	tbody {
+		tr {
+			&:nth-child(odd) {
+				.background(darken(@lightestGray, 2%));
+			}
+		}
+	}
+}
+
+.example-output {
+	.margin(vertical; 20px);
+	&__heading {
+		.bold();
+		.font-size(15px);
+	}
+	pre {
+		.padding(0) !important;
+	}
+}
