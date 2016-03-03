@@ -556,6 +556,93 @@ user-select: none;</code>
   </div>
 </div>
 
+#### `.selection();`
+
+<table class="doc-table">
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>@color</td>
+      <td>color</td>
+      <td>@selectionColor</td>
+      <td>Selection color</td>
+    </tr>
+    <tr>
+      <td>@background</td>
+      <td>color, string, keyword</td>
+      <td>@selectionBackground</td>
+      <td>Selection background</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="example-output">
+  <div class="example-output__block">
+    <div class="example-output__heading">Example</div>
+    <pre class="language-less">
+      <code>.selection();</code>
+    </pre>
+  </div>
+  <div class="example-output__block">
+    <div class="example-output__heading">Output</div>
+    <pre class="language-css">
+      <code>::-moz-selection {
+    text-shadow: none;
+    background: #167da3;
+    color: #ffffff;
+}
+::selection {
+    text-shadow: none;
+    background: #167da3;
+    color: #ffffff;
+}</code>
+    </pre>
+  </div>
+</div>
+
+#### `.cursor();`
+
+<table class="doc-table">
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>@value</td>
+      <td>keyword</td>
+      <td>pointer</td>
+      <td>Cursor value</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="example-output">
+  <div class="example-output__block">
+    <div class="example-output__heading">Example</div>
+    <pre class="language-less">
+      <code>.cursor();</code>
+    </pre>
+  </div>
+  <div class="example-output__block">
+    <div class="example-output__heading">Output</div>
+    <pre class="language-css">
+      <code>cursor: pointer;</code>
+    </pre>
+  </div>
+</div>
+
 #### `.tab-size();`
 
 <table class="doc-table">
@@ -589,6 +676,25 @@ user-select: none;</code>
     <pre class="language-css">
       <code>-moz-tab-size: 4;
 tab-size: 4;</code>
+    </pre>
+  </div>
+</div>
+
+#### `.hide-text();`
+
+<div class="example-output">
+  <div class="example-output__block">
+    <div class="example-output__heading">Example</div>
+    <pre class="language-less">
+      <code>.hide-text();</code>
+    </pre>
+  </div>
+  <div class="example-output__block">
+    <div class="example-output__heading">Output</div>
+    <pre class="language-css">
+      <code>overflow: hidden;
+text-indent: 100%;
+white-space: nowrap;</code>
     </pre>
   </div>
 </div>
