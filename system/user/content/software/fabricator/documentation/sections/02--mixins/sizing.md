@@ -323,3 +323,54 @@ overflow: hidden;</code>
     </pre>
   </div>
 </div>
+
+#### `.fill();`
+
+<table class="doc-table">
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>horizontal, vertical, both</td>
+      <td>keyword</td>
+      <td>-</td>
+      <td>Horizontal, vertical, or both preset</td>
+    </tr>
+    <tr>
+      <td>@value</td>
+      <td>keyword, color</td>
+      <td>horizontal</td>
+      <td>Fill value</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="example-output">
+  <div class="example-output__block">
+    <div class="example-output__heading">Example</div>
+    <pre class="language-less">
+      <code>.fill();
+.fill(vertical);
+.fill(blue);
+
+.fill(both);</code>
+    </pre>
+  </div>
+  <div class="example-output__block">
+    <div class="example-output__heading">Output</div>
+    <pre class="language-css">
+      <code>width: 100%;
+height: 100%;
+fill: #00f;
+
+width: 100%;
+height: 100%;</code>
+    </pre>
+  </div>
+</div>
