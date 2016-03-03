@@ -217,3 +217,39 @@ position: static;</code>
     </pre>
   </div>
 </div>
+
+#### `.z-index();`
+
+<table class="doc-table">
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>@index</td>
+      <td>integer</td>
+      <td>1</td>
+      <td>Z-index</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="example-output">
+  <div class="example-output__block">
+    <div class="example-output__heading">Example</div>
+    <pre class="language-less">
+      <code>.z-index(4);</code>
+    </pre>
+  </div>
+  <div class="example-output__block">
+    <div class="example-output__heading">Output</div>
+    <pre class="language-css">
+      <code>z-index: 4;</code>
+    </pre>
+  </div>
+</div>
