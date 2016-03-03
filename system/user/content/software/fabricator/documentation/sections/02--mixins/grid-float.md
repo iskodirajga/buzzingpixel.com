@@ -259,14 +259,14 @@ margin-left: 0;</code>
   <tbody>
     <tr>
       <td>@share</td>
-      <td>integer</td>
+      <td>float</td>
       <td>-</td>
       <td>Column span</td>
       <td>✔</td>
     </tr>
     <tr>
       <td>@columns</td>
-      <td>integer</td>
+      <td>float</td>
       <td>@gridColumns</td>
       <td>Number of columns</td>
       <td></td>
@@ -325,14 +325,14 @@ position: relative;</code>
     </tr>
     <tr>
       <td>@share</td>
-      <td>integer</td>
+      <td>float</td>
       <td>-</td>
       <td>Column span</td>
       <td>✔</td>
     </tr>
     <tr>
       <td>@columns</td>
-      <td>integer</td>
+      <td>float</td>
       <td>@gridColumns</td>
       <td>Number of columns</td>
       <td></td>
