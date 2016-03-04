@@ -1,8 +1,8 @@
 ---
 Template: index
 Title: Custom Websites
-SeoTitle: Hand-Craft Custom Websites of the Highest Quality
-SeoDescription: BuzzingPixel builds custom add-ons for ExpressionEngine and Craft
+SeoTitle: Hand-Crafted Custom Websites of the Highest Quality
+SeoDescription: BuzzingPixel builds unique, hand-crafted, custom websites to fit every individual need.
 HeaderBackgroundImage: /assets/img/heroes/collective-home-hero.jpg
 BannerHeadline: 
 PrimaryBannerImage: /assets/img/custom-websites/custom-websites-screen-mobile.png
