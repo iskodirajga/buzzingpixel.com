@@ -35,6 +35,33 @@ return [
 			'title' => 'software',
 			'link' => '/software',
 			'subnav' => [
+				'ansel-ee' => [
+					'title' => 'Ansel for ExpressionEngine',
+					'link' => '/software/ansel-ee',
+					'hide' => true,
+					'subnav' => [
+						'about' => [
+							'title' => 'about',
+							'link' => '/software/ansel-ee'
+						],
+						'documentation' => [
+							'title' => 'documentation',
+							'link' => '/software/ansel-ee/documentation'
+						],
+						'demo-video' => [
+							'title' => 'demo video',
+							'link' => '/software/ansel-ee/demo-video'
+						],
+						'changelog' => [
+							'title' => 'changelog',
+							'link' => '/software/ansel-ee/changelog'
+						],
+						'support' => [
+							'title' => 'support',
+							'link' => '/software/ansel-ee/support'
+						]
+					]
+				],
 				'construct' => [
 					'title' => 'Construct',
 					'link' => '/software/construct',
