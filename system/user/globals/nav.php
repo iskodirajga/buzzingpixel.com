@@ -38,7 +38,7 @@ return [
 				'ansel-ee' => [
 					'title' => 'Ansel for ExpressionEngine',
 					'link' => '/software/ansel-ee',
-					'hide' => true,
+					'hide' => false,
 					'subnav' => [
 						'about' => [
 							'title' => 'about',
