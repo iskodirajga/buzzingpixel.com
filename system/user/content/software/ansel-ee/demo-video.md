@@ -3,7 +3,7 @@ Title: Ansel Demo Video
 SoftwareTitle: Ansel
 SeoTitle: Ansel Demo Video
 Template: _software/video
-HeaderBackgroundImage: /assets/img/banners/css-code.jpg
+HeaderBackgroundImage: /assets/img/banners/ansel-banner.jpg
 ---
 
 <p class="center">Learn about the basics of Ansel in this video walk through of a few basic concepts!</p>

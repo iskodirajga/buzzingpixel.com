@@ -2,5 +2,5 @@
 Title: Ansel Documentation
 SeoTitle: Installing and Updating Ansel
 Template: _software/documentation
-HeaderBackgroundImage: /assets/img/banners/css-code.jpg
+HeaderBackgroundImage: /assets/img/banners/ansel-banner.jpg
 ---
