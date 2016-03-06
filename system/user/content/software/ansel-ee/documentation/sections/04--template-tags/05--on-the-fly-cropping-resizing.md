@@ -2,7 +2,7 @@
 Title: On the Fly Cropping and Resizing
 ---
 
-Ansel can crop and resize images on the fly. Doing so is very effecient because the the croped/resized image is cached after the first request for it is made. Any request for that cropped/resized image thereafter comes straight from the cache on disk.
+Ansel can crop and resize images on the fly. Doing so is very efficient because the cropped/resized image is cached after the first request for it is made. Any request for that cropped/resized image thereafter comes straight from the cache on disk.
 
 Cropping/resizing is available to the `{img:url}` and `{img:tag}` variables.
 

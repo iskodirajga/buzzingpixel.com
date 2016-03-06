@@ -18,7 +18,7 @@ After you select or upload an image, the image will be shown to you with a crop 
 
 ![Ansel Cropping](/assets/img/documentation/ansel/ansel-cropping.png)
 
-Use the crop lasso to select the relevant portion of the image you would like, and press the accept button (green checkmark).
+Use the crop lasso to select the relevant portion of the image you would like, and press the accept button (green check-mark).
 
 <div class="content-blocks__note">
 	<div class="content-blocks__note-title">Note</div>

@@ -11,7 +11,7 @@ Ansel has a few settings you may want to look at before diving in to making your
 The first thing you will want to do is visit the License page and enter your license key from your purchase on devote:ee.
 
 - In ExpressionEngine 2, the license page can be located by clicking on “Ansel” from the list of Modules, then clicking on the “License” tab
-- In ExpressionEngine 3, the license page can by licated by clicking on “Ansel” from the list of Add-ons in the Add-on Manager, then clicking on the “License” link in the sidebar
+- In ExpressionEngine 3, the license page can by located by clicking on “Ansel” from the list of Add-ons in the Add-on Manager, then clicking on the “License” link in the sidebar
 
 <div class="content-blocks__note">
 	<div class="content-blocks__note-title">Remember</div>
