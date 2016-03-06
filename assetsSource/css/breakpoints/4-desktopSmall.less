@@ -26,6 +26,11 @@
 		.fill();
 		.padding(right; @bumperPadding);
 		.right(0);
+		.transition(opacity; 0.3s);
+		&--faded {
+			.opacity(25%);
+			.transition(opacity; 4s);
+		}
 	}
 	&__navigation-sub-list {
 		.absolute(80px; 0);

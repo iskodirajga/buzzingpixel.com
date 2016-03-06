@@ -1,4 +1,4 @@
-<header class="site-header{% if headerModifier %} site-header--{{ headerModifier }}{% endif %}" role="banner">
+<header class="site-header{% if headerModifier %} site-header--{{ headerModifier }}{% endif %} js-site-header" role="banner">
 	{# Mobile Hamburger #}
 	<span class="site-header__hamburger js-hamburger"></span>
 
@@ -10,7 +10,7 @@
 	</div>
 
 	{# Primary Nav #}
-	<nav class="site-header__navigation" role="navigation">
+	<nav class="site-header__navigation js-header-nav" role="navigation">
 		<ul class="site-header__navigation-list">
 			{% for item in nav %}
 				{% if not item.hide %}
