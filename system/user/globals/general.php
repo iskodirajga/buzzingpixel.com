@@ -1,6 +1,6 @@
 <?php
 
 return [
-	'cssVer' => 3,
-	'jsVer' => 1
+	'cssVer' => 4,
+	'jsVer' => 2
 ];
