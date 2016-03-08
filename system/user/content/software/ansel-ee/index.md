@@ -13,7 +13,7 @@ PreRelease: false
 Segments:
   0:
     image: /assets/img/software-index/ansel-computer-screen.png
-    text: <p>Ansel solves the age old problem, how can I constrain images to fit within any given context, make sure it meets minimum and maxinmum requirements, and still find the part of the image that is relevant?</p><p>Ansel solves this problem by allowing image fields to have minimum and/or maximum requirements, aspect ratio, minimum and maximum number of image, and more. Then when editing entries, content managers can use the lasso to select the portion of the image they want within the defined contraints.</p><p><a href="/software/ansel-ee/demo-video" class="button button--rounded button--rounded--hollow software-page__button">Watch the Video »</a></p>
+    text: <p>Ansel solves the age old problem, how can I constrain images to fit within any given context, make sure it meets minimum and maximum requirements, and still find the part of the image that is relevant?</p><p>Ansel solves this problem by allowing image fields to have minimum and/or maximum requirements, aspect ratio, minimum and maximum number of image, and more. Then when editing entries, content managers can use the lasso to select the portion of the image they want within the defined constraints.</p><p><a href="/software/ansel-ee/demo-video" class="button button--rounded button--rounded--hollow software-page__button">Watch the Video »</a></p>
   1:
     text: <div class="centered"><img src="/assets/img/software-index/ansel-field.jpg" width="739" alt="Field Limits Publish Page"></div>
 FinalCallText: Get started with Ansel today by purchasing a site license!
