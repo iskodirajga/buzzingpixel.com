@@ -332,4 +332,13 @@
 		.font(@ddFont; @ddFontSize);
 		.spaced(@ddMarginBottom);
 	}
+
+	.img-left {
+		float: left;
+		.margin(.32em; @imageMarginSide; @imageMarginBottom; false);
+	}
+	.img-right {
+		float: right;
+		.margin(.32em; false; @imageMarginBottom; @imageMarginSide);
+	}
 }
