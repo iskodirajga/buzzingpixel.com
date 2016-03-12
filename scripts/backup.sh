@@ -13,4 +13,4 @@ tar -czf /home/forge/backups/buzzingpixel.com/${DATE}/files.tar.gz /home/forge/b
 /usr/local/aws/bin/aws s3 sync /home/forge/backups/ s3://washbackups
 
 # Delete local backup
-rm -rf /home/forge/backups;
+rm -rf /home/forge/backups/buzzingpixel.com;
