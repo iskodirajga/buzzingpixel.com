@@ -263,6 +263,28 @@ return [
 							'link' => '/software/last-edit-date/support'
 						]
 					]
+				],
+				'marksmin' => [
+					'title' => 'Marksmin for ExpressionEngine',
+					'link' => '/software/marksmin',
+					'subnav' => [
+						'about' => [
+							'title' => 'about',
+							'link' => '/software/marksmin'
+						],
+						'documentation' => [
+							'title' => 'documentation',
+							'link' => '/software/marksmin/documentation'
+						],
+						'changelog' => [
+							'title' => 'changelog',
+							'link' => '/software/marksmin/changelog'
+						],
+						'support' => [
+							'title' => 'support',
+							'link' => '/software/marksmin/support'
+						]
+					]
 				]
 			]
 		],
