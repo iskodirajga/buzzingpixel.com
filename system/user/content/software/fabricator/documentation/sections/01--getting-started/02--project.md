@@ -56,12 +56,26 @@ Note: Keys in this object are relative to the `assets` directory and values to t
 
 The key of items in this object is the output file name and location. The value can be either a string file path to compile, or an array of files to compile.
 
+### `jsBuildBefore`
+
+Type: array  
+Note: Items are relative to the `source` directory
+
+All files listed in this array will be compiled into the primary JS output file before the rest of your JS.
+
 ### `jsBuild`
 
 Type: array  
 Note: Items are relative to the `source` directory
 
 All files listed in this array will be compiled into the primary JS output file.
+
+### `jsBuildAfter`
+
+Type: array  
+Note: Items are relative to the `source` directory
+
+All files listed in this array will be compiled into the primary JS output file after the rest of your JS.
 
 ### `jsFiles`
 
@@ -75,3 +89,9 @@ The key of items in this object is the output file name and location. The value 
 Type: boolean
 
 Enable or disable sourcemaps.
+
+### `enabledJsComponents`
+
+Type: boolean
+
+Enable or disable JS components by adding or removing them from the array.

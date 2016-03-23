@@ -51,6 +51,8 @@ A Fabricator function set is really just a fancy wrapper around an object that c
 </code>
 </pre>
 
+To auto init a Fabricator function set on, set a property of `autoInit: true` in the object.
+
 In addition to being run from a controller, this function set can be accessed directly like so:
 
 <pre class="language-javascript">
@@ -88,3 +90,19 @@ This will return a new instance of the function set. Note that the original, unt
     </tr>
   </tbody>
 </table>
+
+In addtional to returning a cloned function set to do something with, you may just want to clone and run the set without storing it anywhere. To do that, set the second parameter to true:
+
+<pre class="language-javascript">
+<code>
+FAB.fn.clone('myFabFunction', true);
+</code>
+</pre>
+
+This runs the `init` function in your cloned function set. You can also pass arguments to your cloned init function:
+
+<pre class="language-javascript">
+<code>
+FAB.fn.clone('myFabFunction', true, arg1, arg2, arg3, etc);
+</code>
+</pre>

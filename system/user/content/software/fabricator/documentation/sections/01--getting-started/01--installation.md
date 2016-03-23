@@ -27,3 +27,5 @@ This is the command you will use most often. Running simply `grunt` will compile
 #### `grunt compile`
 
 If you would just like to compile your project once without keeping a task open watching for changes, run `grunt compile`.
+
+Note that the build process manages the `css`, `fonts,`, `img`, and `js` directories. Those directories will be cleared out every time the grunt process is started and rebuilt. If you want anything in those directories, use the corresponding directory in your `assetsSource` directory.
