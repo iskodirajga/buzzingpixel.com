@@ -10,9 +10,6 @@ Title: Tables
 
 @tableFontSize: @baseFontSize;
 
-@tableBorderedClassModifier: table-bordered;
-@tableStripedClassModifier: table-striped;
-
 // Table Cells
 
 @tableCellLineHeight: @paragraphLineHeight;

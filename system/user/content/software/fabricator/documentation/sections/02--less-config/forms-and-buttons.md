@@ -122,8 +122,6 @@ Title: Forms and Buttons
 
 // Colored Buttons
 
-@coloredButtonClassModifier: button-colored;
-
 @coloredButtonColor: @white; // font color
 
 @coloredButtonBackground: @linkColor;
@@ -133,8 +131,6 @@ Title: Forms and Buttons
 @coloredButtonBorderColor: false;
 
 // Disabled Buttons
-
-@disabledButtonClassModifier: button-disabled;
 
 @disabledButtonColor: @darkGray;
 
