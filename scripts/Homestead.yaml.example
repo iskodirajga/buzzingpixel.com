@@ -1,0 +1,25 @@
+---
+ip: "192.168.56.106"
+memory: 2048
+cpus: 1
+hostname: buzzingpixel
+name: BuzzingPixel
+provider: virtualbox
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: ~/Sites/BuzzingPixel/BuzzingPixel.com/
+      to: /home/vagrant/development/
+      type: "nfs"
+
+sites:
+    - map: buzzingpixel.dev
+      to: /home/vagrant/development/public/
+
+variables:
+    - key: APP_ENV
+      value: local

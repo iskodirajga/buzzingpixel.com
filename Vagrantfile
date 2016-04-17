@@ -4,10 +4,10 @@ require 'yaml'
 VAGRANTFILE_API_VERSION ||= "2"
 confDir = $confDir ||= File.expand_path("vendor/laravel/homestead", File.dirname(__FILE__))
 
-homesteadYamlPath = "Homestead.yaml"
-homesteadJsonPath = "Homestead.json"
-afterScriptPath = "after.sh"
-aliasesPath = "aliases"
+homesteadYamlPath = "scripts/Homestead.yaml"
+homesteadJsonPath = "scripts/Homestead.json"
+afterScriptPath = "scripts/vagrantProvision.sh"
+aliasesPath = "scripts/vagrantAliases"
 
 require File.expand_path(confDir + '/scripts/homestead.rb')
 
@@ -26,7 +26,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         config.vm.provision "shell", path: afterScriptPath
     end
 
-    config.vm.box_version = "0.4.0"
+    config.vm.box_version = "0.4.2"
 
     # Make sure nginx restarts after shared folders are mounted.
     config.vm.provision "shell", inline: "sudo service nginx restart",
