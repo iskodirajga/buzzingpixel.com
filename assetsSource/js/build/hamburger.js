@@ -5,12 +5,14 @@
 	 * Hamburger controller
 	 */
 	F.fn.make('hamburger', {
+		autoInit: true,
+
 		/**
 		 * Constructor
 		 *
 		 * This constructor runs on page load and sets up the mobile hamburger
 		 */
-		_construct: function() {
+		init: function() {
 			var _this = this;
 			var $hamburger = $('.js-hamburger');
 			var $siteWrapperInner = $('.js-site-wrap-inner');

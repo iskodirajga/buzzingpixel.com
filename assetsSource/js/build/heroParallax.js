@@ -5,12 +5,14 @@
 	 * Hero paralax controller
 	 */
 	F.fn.make('heroParallax', {
+		autoInit: true,
+
 		/**
 		 * Constructor
 		 *
 		 * This constructor runs on page load and sets up hero paralax
 		 */
-		_construct: function() {
+		init: function() {
 			var divider = 2.5;
 			var $win = $(window);
 			var initialOffset = $win.scrollTop() / divider;

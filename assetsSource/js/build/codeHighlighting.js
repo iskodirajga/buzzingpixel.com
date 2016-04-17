@@ -7,21 +7,16 @@
 	 * Code highlighting
 	 */
 	F.fn.make('codeHighlighting', {
-		/**
-		 * Constructor
-		 *
-		 * This constructor runs on page load and sets up code highlighting
-		 */
-		_construct: function() {
-			if ($('pre').length > 0) {
-				this.init();
-			}
-		},
+		autoInit: true,
 
 		/**
 		 * Initialize code highlighting
 		 */
 		init: function() {
+			if (! $('pre').length) {
+				return;
+			}
+
 			F.assets.load({
 				css: [
 					'assets/css/lib/prism/prism.min.css',

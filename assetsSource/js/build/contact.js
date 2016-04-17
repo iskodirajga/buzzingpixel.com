@@ -5,27 +5,21 @@
 	 * Hero paralax controller
 	 */
 	F.fn.make('contact', {
-		/**
-		 * Constructor
-		 *
-		 * This constructor runs on page load and sets up hero paralax
-		 */
-		_construct: function() {
-			var $contactForm = $('.js-contact-form');
-
-			// If there is a contact form on the page, initialize
-			if ($contactForm.length) {
-				this.init($contactForm);
-			}
-		},
+		autoInit: true,
 
 		/**
 		 * Initialize contact form
 		 *
 		 * @param {jQuery} $contactForm
 		 */
-		init: function($contactForm) {
+		init: function() {
 			var _this = this;
+			var $contactForm = $('.js-contact-form');
+
+			// If there is a contact form on the page, initialize
+			if (! $contactForm.length) {
+				return;
+			}
 
 			// Hijack form submission
 			$contactForm.on('submit', function(e) {

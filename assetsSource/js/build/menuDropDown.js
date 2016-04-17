@@ -5,12 +5,14 @@
 	 * Menu dropdown controller
 	 */
 	F.fn.make('menuDropDown', {
+		autoInit: true,
+
 		/**
 		 * Constructor
 		 *
 		 * This constructor runs on page load and sets up menu dropdowns
 		 */
-		_construct: function() {
+		init: function() {
 			var _this = this;
 			var $menuParent = $('.js-menu-parent');
 

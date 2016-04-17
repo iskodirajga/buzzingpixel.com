@@ -5,12 +5,14 @@
 	 * Accordion controller
 	 */
 	F.fn.make('accordion', {
+		autoInit: true,
+
 		/**
 		 * Constructor
 		 *
 		 * This constructor runs on page load and sets up accordions
 		 */
-		_construct: function() {
+		init: function() {
 			var _this = this;
 
 			F.screen.map([

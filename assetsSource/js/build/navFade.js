@@ -5,12 +5,14 @@
 	 * Code highlighting
 	 */
 	F.fn.make('navFade', {
+		autoInit: true,
+
 		/**
 		 * Constructor
 		 *
 		 * This constructor runs on page load and sets up nav fading
 		 */
-		_construct: function() {
+		init: function() {
 			var _this = this;
 			var $siteHeader = $('.js-site-header');
 			var $headerNav = $('.js-header-nav');
@@ -19,7 +21,7 @@
 				$headerNav.addClass('site-header__navigation--faded');
 			}, 1000);
 
-			$siteHeader.on('mouseenter', function() {
+			$siteHeader.on('mousemove', function() {
 				clearTimeout(_this.faderTimeout);
 
 				$headerNav.removeClass('site-header__navigation--faded');

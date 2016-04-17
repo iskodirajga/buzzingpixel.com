@@ -2,29 +2,23 @@
 	'use strict';
 
 	/**
-	 * Hero paralax controller
+	 * Coming soon controller
 	 */
 	F.fn.make('comingSoon', {
-		/**
-		 * Constructor
-		 *
-		 * This constructor runs on page load and sets up hero paralax
-		 */
-		_construct: function() {
-			var $btn = $('.js-coming-soon-btn');
-
-			if ($btn.length) {
-				this.init($btn);
-			}
-		},
+		autoInit: true,
 
 		/**
 		 * Initialize coming soon buttons
 		 *
 		 * @param {jQuery} $btn
 		 */
-		init: function($btn) {
+		init: function() {
 			var _this = this;
+			var $btn = $('.js-coming-soon-btn');
+
+			if (! $btn.length) {
+				return;
+			}
 
 			$btn.on('click', function(e) {
 				var $el = $(this);
