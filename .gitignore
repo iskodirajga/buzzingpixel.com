@@ -16,7 +16,7 @@ system/user/config/secret.php
 
 
 #------------------------------------
-	# System
+	# Frame
 #------------------------------------
 
 # Caches
@@ -30,7 +30,11 @@ public/cache/*
 	# Tools
 #------------------------------------
 
-node_modules
+localStorage/*
+backups/*
+bower_components/
+node_modules/
+out/
 .bundle
 .idea/
 .komodotools
@@ -45,15 +49,13 @@ browserstack.js
 codekit-config.json
 mixture.json
 prepros.json
-Homestead.yaml
-vendor/*
 
 
 
 
 
 #------------------------------------
-	# Environment
+	# System
 #------------------------------------
 
 .cache
@@ -61,7 +63,6 @@ vendor/*
 .tmp
 *.diff
 *.err
-*.lock
 *.log
 *.orig
 *.rej
@@ -70,6 +71,8 @@ vendor/*
 *.vi
 error_log
 Thumbs.db
+Homestead.yaml
+vendor/*
 *.vagrant
 
 
