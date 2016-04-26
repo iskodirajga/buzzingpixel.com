@@ -123,3 +123,9 @@ The config override item is `$config['ansel']['default_show_cover']`.
 	<div class="content-blocks__note-title">Note</div>
 	<p>This does not affect field settings, only the default value populated in Display cover field when creating new fields.</p>
 </div>
+
+#### Hide the Upload/Save directory instructions when setting up a new field?
+
+Hide the instructions for how to use the Upload/Save directory settings when setting up/editing Ansel fields.
+
+The config override item is `$config['ansel']['hide_source_save_instructions'] = true;`.
