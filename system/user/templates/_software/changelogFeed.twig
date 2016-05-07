@@ -14,7 +14,7 @@
 		{
 			"version": {{ item.Version|json_encode|raw }},
 			"downloadUrl": {{ item.DownloadUrl|json_encode|raw }},
-			"date": {{ item.dateTime.format('Y-m-d\TH:i:sP') }},
+			"date": {{ item.dateTime.format('Y-m-d\TH:i:sP')|json_encode|raw }},
 			"notes": [
 				{{ item.PreLog|json_encode|raw }},
 				{% for logKey,logItem in item.Log %}
