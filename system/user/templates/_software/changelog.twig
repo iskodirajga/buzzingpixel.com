@@ -70,6 +70,16 @@
 								</div>
 							</div>
 							<div class="changelog__right-col">
+								{{ item.PreLog|markdown|raw }}
+								{% for logKey,logItem in item.Log %}
+									<h2>{{ logKey }}</h2>
+									<ul>
+										{% for bullets in logItem %}
+											<li>{{ bullets|markdown|raw }}</li>
+										{% endfor %}
+									</ul>
+								{% endfor %}
+								{{ item.PostLog|markdown|raw }}
 								{{ item.body|raw }}
 							</div>
 						</div>

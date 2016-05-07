@@ -49,6 +49,16 @@
 							</div>
 						</div>
 						<div class="changelog__right-col">
+							{{ yaml.PreLog|markdown|raw }}
+							{% for logKey,logItem in yaml.Log %}
+								<h2>{{ logKey }}</h2>
+								<ul>
+									{% for bullets in logItem %}
+										<li>{{ bullets|markdown|raw }}</li>
+									{% endfor %}
+								</ul>
+							{% endfor %}
+							{{ yaml.PostLog|markdown|raw }}
 							{{ body|raw }}
 						</div>
 					</div>

@@ -1,0 +1,32 @@
+{% spaceless %}
+
+{% set changelogPath = [uri.segments[0], '/', uri.segments[1], '/', uri.segments[2]]|join %}
+
+{% set changelogItems = listing({
+	path: changelogPath,
+	limit: 10
+}) %}
+
+{# {{ dump(changelogItems) }} #}
+
+[
+	{% for item in changelogItems %}
+		{
+			"version": {{ item.Version|json_encode|raw }},
+			"downloadUrl": {{ item.DownloadUrl|json_encode|raw }},
+			"date": {{ item.dateTime.format('Y-m-d\TH:i:sP') }},
+			"notes": [
+				{{ item.PreLog|json_encode|raw }},
+				{% for logKey,logItem in item.Log %}
+					"# {{ logKey|json_encode|raw|trim('"') }}",
+					{% for bullets in logItem %}
+						"[{{ logKey|json_encode|raw|trim('"') }}] {{ bullets|json_encode|raw|trim('"') }}",
+					{% endfor %}
+				{% endfor %}
+				{{ item.PostLog|json_encode|raw }}
+			]
+		}{% if not loop.last %},{% endif %}
+	{% endfor %}
+]
+
+{% endspaceless %}
