@@ -20,15 +20,7 @@ You will need to enter the license key for this Ansel installation
 	<p>You will need to purchase a site license for each of the sites you install Ansel on.</p>
 </div>
 
-#### Default host
-
-NOT NEEDED. This will go away in the next alpha of Ansel since it uses Craft Assets natively.
-
-#### Image cache location and Image cache url
-
-NOT NEEDED. This will go away in the next alpha of Ansel since it uses Craft Assets transforms natively.
-
-#### Default maximum quantity
+### Default maximum quantity
 
 Use this to set a default value for maximum quantity when creating new fields.
 
@@ -39,7 +31,7 @@ The config override key is `defaultMaxQty`.
 	<p>This does not affect field settings, only the default value populated in the Max Quantity field when creating new fields.</p>
 </div>
 
-#### Default image quality
+### Default image quality
 
 Use this to set a default value for the image quality setting when creating new fields.
 
@@ -50,7 +42,7 @@ The config override key is `defaultImageQuality`.
 	<p>This does not affect field settings, only the default value populated in the Image Quality field when creating new fields.</p>
 </div>
 
-#### Default force JPG setting
+### Default force JPG setting
 
 Use this to set newly created fields to default to forcing JPG.
 
@@ -61,7 +53,7 @@ The config override key is `defaultJpg`.
 	<p>This does not affect field settings, only the default value populated in the Force JPEG field when creating new fields.</p>
 </div>
 
-#### Default retina mode
+### Default retina mode
 
 Use this to set newly created fields to default to retina mode.
 
@@ -72,7 +64,7 @@ The config override key is `defaultRetina`.
 	<p>This does not affect field settings, only the default value populated in the Retina Mode field when creating new fields.</p>
 </div>
 
-#### Default display title field
+### Default display title field
 
 Use this to set newly created fields to default to show the title field.
 
@@ -83,7 +75,7 @@ The config override key is `defaultShowTitle`.
 	<p>This does not affect field settings, only the default value populated in Display title field when creating new fields.</p>
 </div>
 
-#### Default display caption field
+### Default display caption field
 
 Use this to set newly created fields to default to show the caption field.
 
@@ -94,7 +86,7 @@ The config override key is `defaultShowCaption`.
 	<p>This does not affect field settings, only the default value populated in Display caption field when creating new fields.</p>
 </div>
 
-#### Default display cover field
+### Default display cover field
 
 Use this to set newly created fields to default to show the cover field.
 
@@ -105,7 +97,7 @@ The config override key is `defaultShowCover`.
 	<p>This does not affect field settings, only the default value populated in Display cover field when creating new fields.</p>
 </div>
 
-#### Hide the Upload/Save directory instructions when setting up a new field?
+### Hide the Upload/Save directory instructions when setting up a new field?
 
 Hide the instructions for how to use the Upload/Save directory settings when setting up/editing Ansel fields.
 
