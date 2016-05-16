@@ -2,9 +2,9 @@
 Title: Looping Through Images
 ---
 
-There are two ways to get Ansel images, and both involve looping through the results in Twig.
+Getting at your Ansel images almost always involves the Twig `{% for %}` loop (the exception is when using the `first` method explained more below).
 
-If you aren’t already familiar with looping in Twig, it’s very simple. Twig loops can loop through any variable or return value that is loopable (an array or object in PHP parlance) with the `{% for var in loopableItem %}` tag. For instance, looping through every Ansel image stored anywhere in Craft and outputting a simple image tag would look like this:
+If you aren’t already familiar with looping in Twig, it’s very simple. Twig `{% for %}` loops can loop through any variable or return value that is loopable (an array or object in PHP parlance) with the `{% for var in loopableItem %}` loop. For instance, looping through every Ansel image stored anywhere in Craft and outputting a simple image tag would look like this:
 
 <div class="content-blocks__pre-wrapper content-blocks__pre-wrapper--example">
 <pre class="content-blocks__pre content-blocks__pre--example  language-twig">
@@ -16,4 +16,4 @@ If you aren’t already familiar with looping in Twig, it’s very simple. Twig 
 </pre>
 </div>
 
-Regardless of how you are getting your images, you are ultimately going to need to loop through Ansel’s images in just such a manner.
+When getting Ansel images, you are ultimately going to need to loop through them in just such a manner.

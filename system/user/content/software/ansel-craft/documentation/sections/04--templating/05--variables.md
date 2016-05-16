@@ -22,7 +22,7 @@ Ansel's internal ID for the image. If you need something unique about the image 
 
 ### `{{ image.elementId }}`
 
-The ID of the owning elmement of the field the image is from.
+The ID of the owning element of the field the image is from.
 
 ### `{{ image.fieldId }}`
 
@@ -30,13 +30,13 @@ The field ID the image is from.
 
 ### `{{ image.asset }}`
 
-This is a [Craft AssetFileModel] and can do anything you see in the linked documentaiton like get the URL, a transform URL and more.
+This is a [Craft AssetFileModel] and can do anything you see in the linked documentation like get the URL, a transform URL and more.
 
 [Craft AssetFileModel]: https://craftcms.com/docs/templating/assetfilemodel
 
 ### `{{ image.highQualityAsset }}`
 
-This is a [Craft AssetFileModel]. Sometimes when running transforms or in other various curcumstances, you want the super high quality version of the image. Luckily, Ansel saves a high quality version regardless of your field quality settings and this is how you access it.
+This is a [Craft AssetFileModel]. Sometimes when running transforms or in other various circumstances, you want the super high quality version of the image. Luckily, Ansel saves a high quality version regardless of your field quality settings and this is how you access it.
 
 ### `{{ image.thumbAsset }}`
 
