@@ -18,6 +18,8 @@ class PhoneHome
 	 */
 	public function run()
 	{
+		header('Content-type: application/json');
+
 		$dataPath = realpath(dirname(__FILE__)) . '/../Data/';
 
 		// Make sure required params are in place
@@ -27,7 +29,7 @@ class PhoneHome
 			! isset($_POST['domain']) or
 			! $_POST['domain']
 		) {
-			return;
+			exit('{"success": false, "message": "invalid request"}');
 		}
 
 		$licenseExists = isset($_POST['license']) && $_POST['license'];
@@ -56,13 +58,9 @@ class PhoneHome
 
 		file_put_contents(
 			$file,
-			"---
-App: {$_POST['app']}
-Domain: {$_POST['domain']}
-License: {$license}
----
-
-"
+			"---\nApp: {$_POST['app']}\nDomain: {$_POST['domain']}\nLicense: {$license}\n---\n"
 		);
+
+		exit('{"success": true}');
 	}
 }
