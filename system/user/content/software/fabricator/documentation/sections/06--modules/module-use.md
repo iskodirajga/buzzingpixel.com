@@ -13,3 +13,10 @@ Modules placed in the `build` directory will be built into the primary CSS and J
 #### `compile`
 
 Modules placed in the `compile` directory will be compiled into their own CSS and JS files. The only difference in structure is that modules in the `compile` directory must contain the module.less file in the CSS directory. That is the file that is compiled into the CSS file. You should never need to edit this file.
+
+## Creating Modules
+
+- It is recommended that you stop your build process first.
+- From the command line run one of the following commands
+	- Build module: `grunt module:build:myModuleName`
+	- Compile module: `grunt module:compile:myModuleName`
