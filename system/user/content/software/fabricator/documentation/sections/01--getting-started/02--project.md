@@ -75,14 +75,18 @@ All files listed in this array will be compiled into the primary JS output file.
 Type: array  
 Note: Items are relative to the `source` directory
 
-All files listed in this array will be compiled into the primary JS output file after the rest of your JS.
-
 ### `jsFiles`
 
 Type: object  
 Note: Keys in this object are relative to the `assets` directory and values to the `source` directory
 
 The key of items in this object is the output file name and location. The value can be either a string file path to compile, or an array of files to compile.
+
+### `jsCompress`
+
+Type: boolean
+
+`true` to enable full JavaScript compression and uglification. `false` to disable.
 
 ### `sourcemaps`
 
@@ -92,6 +96,21 @@ Enable or disable sourcemaps.
 
 ### `enabledJsComponents`
 
-Type: boolean
+Type: array
 
-Enable or disable JS components by adding or removing them from the array.
+Enable or disable JS components by adding or removing them from the array. Currently the only accepted key is `base`. Removing this key will disable all Fabricator JS components.
+
+### `disabledJsComponents`
+
+Type: array
+
+List the filename of the Fabricator component you wish to disable here.
+
+Example:
+
+```
+"disabledJsComponents": [
+	"FAB.assets.js",
+	"FAB.fn.js"
+]
+```
