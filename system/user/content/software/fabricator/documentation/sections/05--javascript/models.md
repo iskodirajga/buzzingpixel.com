@@ -109,4 +109,25 @@ Fabricator makes use of a model system for storing variables and watching for ch
   </tbody>
 </table>
 
+#### `FAB.triggerChange('myVar')`
+
+<table class="doc-table">
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Variable Name</td>
+      <td>string</td>
+      <td>The variable to trigger change event for</td>
+      <td>✔</td>
+    </tr>
+  </tbody>
+</table>
+
 All [function sets](#function-sets) also have their own storage models. Instead of working off the FAB global object, you work from your local scope (`this`) in your function set object, or directly on the function set at `FAB.myFunctionSet.set('myVar', 'myVal')`.
