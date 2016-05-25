@@ -6,6 +6,10 @@ Title: Enable or Disable various Fabricator CSS components
 <code>
 @responsiveEnabled: false;
 @resetEnabled: false;
+@styledReset: false;
+@imageAlignmentEnabled: false;
+@typographyEnabled: false;
+@listsEnabled: false;
 @containerEnabled: false;
 @codeEnabled: false;
 @formsAndButtonsEnabled: false;
