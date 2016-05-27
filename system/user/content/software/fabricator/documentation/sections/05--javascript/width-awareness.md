@@ -4,7 +4,7 @@ Title: Width Awareness
 
 One of the big challenges with making context independent components on the web is making them aware of their width and adjusting their style accordingly. We can use media queries on the window width, but we can’t on individual elements which is terrible for placing componenents in any context regardless of the size of the context. That’s why the `widthAwareness` api was created in Fabricator.
 
-With `widthAwareness` you tell the api to watch an element. As that element resizes, data attributes of the width are added dynamically to the element so that you can style based on the size of the element.
+With `widthAwareness` you tell the api to watch an element. As that element resizes, the `data-widths` attribute is dynamically updated on the element so that you can style based on the size of the element.
 
 <pre class="language-javascript">
 <code>
@@ -22,10 +22,10 @@ F.widthAwareness.add($('.myClass'), [
 .myClass {
 	background: red;
 }
-.myClass[data-width-400] {
+.myClass[data-widths~="400"] {
 	background: blue;
 }
-.myClass[data-width-800] {
+.myClass[data-widths~="800"] {
 	background: yellow;
 }
 </code>
@@ -90,6 +90,10 @@ Removes width awareness from the specified element(s).
 #### `F.widthAwareness.watchSelector('.myClass', 400, 800);`
 
 Watches the DOM for elements of the specified selector being inserted and adds width awareness to them. It will also add width awareness to any already existing DOM elemenents when instantiated
+
+##### `$('.myClass').trigger('widthAwarenessCheck')`
+
+Programatically triggers an width check on the element.
 
 <table class="doc-table">
   <thead>
