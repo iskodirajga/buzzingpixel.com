@@ -22,6 +22,6 @@ You can also see [roadmaps and upcoming features](http://support.buzzingpixel.co
 
 <div class="centered">
 	<a href="http://support.buzzingpixel.com/" class="button button--rounded button--rounded--hollow">
-		Got to Support »
+		Go to Support »
 	</a>
 </div>
