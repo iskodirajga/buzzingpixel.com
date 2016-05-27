@@ -21,6 +21,10 @@
 
 {# Set content #}
 {%- block content -%}
+	{% if yaml.Redirect %}
+		{{ redirect(yaml.Redirect) }}
+	{% endif %}
+
 	{# Include the software navigation #}
 	{%- include "_partials/softwareNav.twig" -%}
 

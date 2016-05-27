@@ -4,6 +4,7 @@ SoftwareTitle: Ansel
 SeoTitle: Get Support for Ansel
 Template: _software/support
 HeaderBackgroundImage: /assets/img/banners/ansel-banner.jpg
+Redirect: http://support.buzzingpixel.com
 ---
 
 I’m sorry to hear you’re having trouble with Ansel. If you use the form to get in touch with me about your issue, I’ll do my best to help you out. Please include your license key from devot:ee.

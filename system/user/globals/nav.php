@@ -2,11 +2,11 @@
 
 return [
 	'nav' => [
-		'home' => [
-			'title' => 'home',
-			'link' => '/',
-			'subnav' => []
-		],
+		// 'home' => [
+		// 	'title' => 'home',
+		// 	'link' => '/',
+		// 	'subnav' => []
+		// ],
 		'custom-development' => [
 			'title' => 'custom development',
 			'link' => '/custom-websites',
@@ -58,7 +58,7 @@ return [
 						],
 						'support' => [
 							'title' => 'support',
-							'link' => '/software/ansel-ee/support'
+							'link' => 'http://support.buzzingpixel.com/'
 						]
 					]
 				],
@@ -84,7 +84,7 @@ return [
 						],
 						'support' => [
 							'title' => 'support',
-							'link' => '/software/construct/support'
+							'link' => 'http://support.buzzingpixel.com/'
 						]
 					]
 				],
@@ -106,7 +106,7 @@ return [
 						],
 						'support' => [
 							'title' => 'support',
-							'link' => '/software/category-construct/support'
+							'link' => 'http://support.buzzingpixel.com/'
 						]
 					]
 				],
@@ -128,7 +128,7 @@ return [
 						],
 						'support' => [
 							'title' => 'support',
-							'link' => '/software/collective/support'
+							'link' => 'http://support.buzzingpixel.com/'
 						]
 					]
 				],
@@ -287,6 +287,11 @@ return [
 					]
 				]
 			]
+		],
+		'support' => [
+			'title' => 'support',
+			'link' => 'http://support.buzzingpixel.com/',
+			'subnav' => []
 		],
 		'contact' => [
 			'title' => 'hire me',
