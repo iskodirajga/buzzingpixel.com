@@ -4,8 +4,8 @@ Title: Validation Result Class
 
 The Validation Result Class is returned by Treasury whenever applicable. It has two properties:
 
-- (bool) hasErrors
-- (array) errors
+- `(bool) hasErrors`
+- `(array) errors`
 
 Here's an example of how Treasury uses this internally:
 
