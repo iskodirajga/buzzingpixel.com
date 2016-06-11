@@ -62,6 +62,29 @@ return [
 						]
 					]
 				],
+				'treasury' => [
+					'title' => 'Treasury for ExpressionEngine',
+					'link' => '/software/treasury',
+					'hide' => true,
+					'subnav' => [
+						'about' => [
+							'title' => 'about',
+							'link' => '/software/treasury'
+						],
+						'documentation' => [
+							'title' => 'documentation',
+							'link' => '/software/treasury/documentation'
+						],
+						'changelog' => [
+							'title' => 'changelog',
+							'link' => '/software/treasury/changelog'
+						],
+						'support' => [
+							'title' => 'support',
+							'link' => 'http://support.buzzingpixel.com/'
+						]
+					]
+				],
 				'construct' => [
 					'title' => 'Construct',
 					'link' => '/software/construct',
