@@ -102,3 +102,25 @@ $link = ee('treasury:FilePicker')->make('my-location')
 </code>
 </pre>
 </div>
+
+## The JavaScript Side
+
+The button opens an EE modal and you can select a file, but you need to do something with it after it is selected. In order to do that, you need to set a callback on your button.
+
+### `$('.my-button-el').TreasuryFilePicker()`
+
+Use the `TreasuryFilePicker` jQuery plugin to set a callback function to use for your button instance.
+
+<div class="content-blocks__pre-wrapper content-blocks__pre-wrapper--example">
+<pre class="content-blocks__pre content-blocks__pre--example language-php">
+<code class="content-blocks__code content-blocks__code--example language-php">
+$('.my-button-el').TreasuryFilePicker({
+	callback: function(file) {
+		console.log(file);
+	}
+});
+</code>
+</pre>
+</div>
+
+The first argument is an object with all the properties of the file, plus any of those properties that don’t match EE’s file object translated.
