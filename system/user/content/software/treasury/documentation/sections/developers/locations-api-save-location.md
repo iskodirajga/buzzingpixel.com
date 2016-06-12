@@ -2,7 +2,7 @@
 Title: Locations API: Save Location
 ---
 
-`ee('treasury:LocationsAPI')::saveLocation()`
+`ee('treasury:LocationsAPI')->saveLocation()`
 
 This method allows you to save a new location or update an existing location.
 
@@ -25,7 +25,7 @@ $saveData = array(
 	)
 );
 
-$result = ee('treasury:LocationsAPI')::saveLocation($saveData);
+$result = ee('treasury:LocationsAPI')->saveLocation($saveData);
 </code>
 </pre>
 </div>
@@ -35,7 +35,7 @@ To update an existing location, provide the original location handle as the seco
 <div class="content-blocks__pre-wrapper content-blocks__pre-wrapper--example">
 <pre class="content-blocks__pre content-blocks__pre--example language-php">
 <code class="content-blocks__code content-blocks__code--example language-php">
-$result = ee('treasury:LocationsAPI')::saveLocation($saveData, 'my_old_location');
+$result = ee('treasury:LocationsAPI')->saveLocation($saveData, 'my_old_location');
 </code>
 </pre>
 </div>

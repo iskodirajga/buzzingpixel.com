@@ -4,7 +4,7 @@ Title: System Requirements
 
 ### General requirements
 
-- ExpressionEngine 2, 2.10.2 or greater; ExpressionEngine 3, 3.1.0 or greater
+- ExpressionEngine 3.3.2 or greater
 
 ### Control Panel interface use requirements
 

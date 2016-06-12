@@ -13,13 +13,13 @@ Here's an example of how Treasury uses this internally:
 <pre class="content-blocks__pre content-blocks__pre--example language-php">
 <code class="content-blocks__code content-blocks__code--example language-php">
 // Run the upload
-$result = ee('treasury:UploadAPI')::addFile(
-	$this->locationModel->handle,
-	$this->saveData['filePath'],
-	$this->saveData['fileName'],
-	$this->saveData['title'],
-	$this->saveData['description']
-);
+$result = ee('treasury:UploadAPI')
+	->locationHandle($this->locationModel->handle)
+	->filePath($this->saveData['filePath'])
+	->fileName($this->saveData['fileName'])
+	->title($this->saveData['title'])
+	->description($this->saveData['description'])
+	->addFile();
 
 // Check if validation has errors
 if ($result->hasErrors) {
