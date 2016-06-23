@@ -21,6 +21,7 @@ caption="my caption|my other caption"<br>
 member_id="23|24"<br>
 position="2|3"<br>
 limit="4"<br>
+offset="4"<br>
 cover_only="true"<br>
 cover_first="yes"<br>
 skip_cover="y"<br>

@@ -47,10 +47,12 @@ Tag Pair Variables
 {img:count}<br>
 {img:total_results}<br>
 {img:host}<br>
-{img:small:path}<br>
-{img:small:url}<br>
-{img:small:width}<br>
-{img:small:height}<br>
+{img:description_field}<br>
+{img:credit_field}<br>
+{img:location_field}<br>
+{img:original_description_field}<br>
+{img:original_credit_field}<br>
+{img:original_location_field}
 </div>
 
 <div class="content-blocks__note software-docs-blocks__quick-ref">
