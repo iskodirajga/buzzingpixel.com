@@ -4,7 +4,7 @@ Title: Configuring
 
 Ansel has a few settings you may want to look at before diving in to making your Ansel fields.
 
-![Ansel Settings](/assets/img/documentation/ansel/ansel-settings.png)
+![Ansel Settings](/assets/img/documentation/ansel/ansel-settings--2016-06-23.png)
 
 ### License Key
 
@@ -35,17 +35,6 @@ Ansel has a number of other global settings you may wish to take advantage of. T
 This field is blank on new installs. If you wish all image URLs to be served from a CDN (for instance), you can enter a fully qualified URL here.
 
 The config override item is `$config['ansel']['default_host']`.
-
-#### Image cache location and Image cache url
-
-The Image cache location setting must be a full server path to a publicly URL accessible directory Ansel can use for caching images that are resized on the fly. New installations set this to the default value  `path/to/public/dir/images/ansel_image_cache/`. Make sure this directory has the appropriate permissions for PHP to write to it.
-
-And the Image cache url must be the publicly accessible URL of that cache directory. The new install default value is `/images/ansel_image_cache/`.
-
-The config override items are:
-
-`$config['ansel']['image_cache_location']`  
-`$config['ansel']['image_cache_url']`
 
 #### Default maximum quantity
 
