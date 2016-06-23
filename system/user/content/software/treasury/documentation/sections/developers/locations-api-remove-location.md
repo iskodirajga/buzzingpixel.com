@@ -16,4 +16,4 @@ $locationModel = ee('treasury:LocationsAPI')->removeLocation('my-location');
 
 ## Return Value
 
-the `removeLocation()` method returns a [Treasury Validation Result Class](#validation-result-class).
+The `removeLocation()` method returns a [Treasury Validation Result Class](#validation-result-class).

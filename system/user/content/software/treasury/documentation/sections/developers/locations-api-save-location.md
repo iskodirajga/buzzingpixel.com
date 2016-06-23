@@ -42,4 +42,4 @@ $result = ee('treasury:LocationsAPI')->saveLocation($saveData, 'my_old_location'
 
 ## Return Value
 
-the `saveLocation()` method returns a [Treasury Validation Result Class](#validation-result-class).
+The `saveLocation()` method returns a [Treasury Validation Result Class](#validation-result-class).

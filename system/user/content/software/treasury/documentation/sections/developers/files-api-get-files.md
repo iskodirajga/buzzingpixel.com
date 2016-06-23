@@ -2,7 +2,7 @@
 Title: Files API: Get Files
 ---
 
-`ee('treasury:FilesAPI')::getFiles()`
+`ee('treasury:FilesAPI')->getFiles()`
 
 The `getFiles()` method acts as a factory for a Treasury Collection of Treasury Files models representing Treasury files.
 
