@@ -65,7 +65,7 @@ return [
 				'treasury' => [
 					'title' => 'Treasury for ExpressionEngine',
 					'link' => '/software/treasury',
-					'hide' => true,
+					'hide' => false,
 					'subnav' => [
 						'about' => [
 							'title' => 'about',
