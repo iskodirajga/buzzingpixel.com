@@ -17,6 +17,7 @@ background="d34747"<br>
 force_jpg="true"<br>
 quality="80"<br>
 scale_up="true"<br>
+cache_time="86400" // Defaults to forever<br>
 </div>
 
 <div class="content-blocks__pre-wrapper content-blocks__pre-wrapper--example">
