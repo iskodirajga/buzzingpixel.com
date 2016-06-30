@@ -33,4 +33,4 @@ $result = ee('treasury:UploadAPI')
 
 ## Return Value
 
-the `addFile()` method returns a [Treasury Validation Result Class](#validation-result-class).
+The `addFile()` method returns a [Treasury Validation Result Class](#validation-result-class).
