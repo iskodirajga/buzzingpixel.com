@@ -4,12 +4,12 @@ SeoTitle: Web Development, ExpressionEngine Expertise, and General Web Knowledge
 SeoDescription: BuzzingPixel specializes in custom web development and add-ons for ExpressionEngine and Craft
 HeaderBackgroundImage: /assets/img/heroes/ansel-home-hero.jpg
 BannerHeadline: 
-PrimaryBannerImage: /assets/img/home/ansel-computer-screen.png
-BannerSubHeading: Ansel
-BannerSubHeading2: image manipulation for ExpressionEngine
-BannerContent: Create beautiful images, the right size every time!
-BannerActionButton: Learn More About Ansel
-BannerActionLink: /software/ansel-ee
+PrimaryBannerImage: /assets/img/home/treasury-computer-screen.png
+BannerSubHeading: Treaury
+BannerSubHeading2: for ExpressionEngine
+BannerContent: Store files and images on Amazon S3, or a custom FTP/SFTP server
+BannerActionButton: Learn More About Treasury
+BannerActionLink: /software/treasury
 Items:
   webdev:
     title: Web Development
