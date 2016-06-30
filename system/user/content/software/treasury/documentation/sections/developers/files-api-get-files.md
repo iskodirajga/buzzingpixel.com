@@ -47,6 +47,7 @@ $filesAPI = ee('treasury:FilesAPI')
 	->filter('modified_by_member_id', 2)
 	->filter('width', '>', 200)
 	->filter('height', '<', 300)
+	->search('My Search Key Words') // Searches title, mime_type, file_name, and description
 	->limit(4)
 	->offset(8)
 	->order('modified_date', 'asc') // second arg optional. Defaults to upload_date desc
