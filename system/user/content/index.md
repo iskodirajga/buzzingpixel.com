@@ -5,7 +5,7 @@ SeoDescription: BuzzingPixel specializes in custom web development and add-ons f
 HeaderBackgroundImage: /assets/img/heroes/ansel-home-hero.jpg
 BannerHeadline: 
 PrimaryBannerImage: /assets/img/home/treasury-computer-screen.png
-BannerSubHeading: Treaury
+BannerSubHeading: Treasury
 BannerSubHeading2: for ExpressionEngine
 BannerContent: Store files and images on Amazon S3, or a custom FTP/SFTP server
 BannerActionButton: Learn More About Treasury
