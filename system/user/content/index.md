@@ -35,6 +35,17 @@ Items:
       <a href="/contact" class="button button--rounded button--rounded--hollow">
         Get in touch »
       </a>
+  hosting:
+    title: Managed CMS Hosting
+    image: /assets/img/home/cms-hosting.jpg
+    text: |
+      I’ve worked with nearly every type of hosting environment there is — and believe me, much of the hosting scene out there is not good. Hosting is one of the biggest hassles many developers face.
+      
+      I want to make that better for you. My number one goal is to make people happy and provide quality. I’m here to do that with hosting too! When you work with me to provide a hosting solution for your ExpressionEngine, Craft, or WordPress site, you’ll wonder why you lived with awful hosting for so long.
+      
+      <a href="/contact" class="button button--rounded button--rounded--hollow">
+        Get in touch »
+      </a>
   news:
     title: The Latest news
   about:
