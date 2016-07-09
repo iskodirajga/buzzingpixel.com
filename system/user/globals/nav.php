@@ -2,13 +2,13 @@
 
 return [
 	'nav' => [
-		// 'home' => [
-		// 	'title' => 'home',
-		// 	'link' => '/',
-		// 	'subnav' => []
-		// ],
+		'home' => [
+			'title' => 'home',
+			'link' => '/',
+			'subnav' => []
+		],
 		'custom-development' => [
-			'title' => 'custom development',
+			'title' => 'let&rsquo;s work together',
 			'link' => '/custom-websites',
 			'subnav' => [
 				'custom-websites' => [
@@ -18,6 +18,14 @@ return [
 				'custom-add-ons' => [
 					'title' => 'Custom CMS Add-ons',
 					'link' => '/custom-add-ons'
+				],
+				'managed-hosting' => [
+					'title' => 'Managed CMS Hosting',
+					'link' => '/hosting'
+				],
+				'portfolio' => [
+					'title' => 'Portfolio',
+					'link' => '/portfolio'
 				]
 			],
 		],
@@ -26,11 +34,11 @@ return [
 			'link' => '/news',
 			'subnav' => []
 		],
-		'portfolio' => [
-			'title' => 'portfolio',
-			'link' => '/portfolio',
-			'subnav' => []
-		],
+		// 'portfolio' => [
+		// 	'title' => 'portfolio',
+		// 	'link' => '/portfolio',
+		// 	'subnav' => []
+		// ],
 		'software' =>[
 			'title' => 'software',
 			'link' => '/software',

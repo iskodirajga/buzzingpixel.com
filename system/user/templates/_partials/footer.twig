@@ -9,7 +9,7 @@
 					{% for item in nav %}
 						<li class="site-footer__navigation-list-item">
 							<a href="{{ item.link }}" class="site-footer__navigation-link">
-								{{- item.title -}}
+								{{- item.title|raw -}}
 							</a>
 						</li>
 					{% endfor %}
