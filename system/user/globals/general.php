@@ -2,5 +2,5 @@
 
 return [
 	'cssVer' => 7,
-	'jsVer' => 3
+	'jsVer' => 4
 ];

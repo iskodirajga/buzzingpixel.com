@@ -47,7 +47,7 @@
 				F.set('uriPath', W.location.pathname + W.location.search);
 			});
 
-			$body.on('click', 'a:not([href^="http"]):not(".js-pjax")', function(e) {
+			$body.on('click', 'a:not([href^="http"]):not(".js-pjax"):not([href^="#"])', function(e) {
 				self.linkClick(e);
 			});
 
