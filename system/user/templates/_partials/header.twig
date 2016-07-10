@@ -15,7 +15,7 @@
 			{% for item in nav %}
 				{% if not item.hide %}
 					<li class="site-header__navigation-list-item js-menu-parent" data-name="{{ item.link|trim("/")|default("home") }}">
-						<a href="{{ item.link }}" class="site-header__navigation-link{% if ["/", uri.segments[0]]|join == item.link or (uri.segments[0] == 'custom-websites' and item.link == '/custom-websites') or (uri.segments[0] == 'custom-add-ons' and item.link == '/custom-websites') %} site-header__navigation-link--active{% endif %}">
+						<a href="{{ item.link }}" class="site-header__navigation-link{% if ["/", uri.segments[0]]|join == item.link or (uri.segments[0] == 'custom-websites' and item.link == '/custom-websites') or (uri.segments[0] == 'custom-add-ons' and item.link == '/custom-websites') or (uri.segments[0] == 'hosting' and item.link == '/custom-websites') or (uri.segments[0] == 'portfolio' and item.link == '/custom-websites') %} site-header__navigation-link--active{% endif %}">
 							{{- item.title|raw -}}
 						</a>
 						{% if item.subnav|length %}
