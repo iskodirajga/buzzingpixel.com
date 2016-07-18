@@ -50,7 +50,7 @@ Items:
     title: The Latest news
   about:
     title: About BuzzingPixel
-    image: /assets/img/home/headshot-2015.jpg
+    image: /assets/img/home/headshot-2016.jpg
     text: |
       BuzzingPixel is the work of one developer, and that’s me, TJ Draper. This is where you’ll find my various projects, ExpressionEngine add-ons, and the like.
 
