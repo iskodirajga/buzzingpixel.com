@@ -169,7 +169,7 @@ Now visiting that node’s URI (along with a pagination segment if present since
 	{if construct_route:node_pagination}
 	disable="categories|member_data"
 	limit="{construct_route:node_pagination_amount}"
-	{else}
+	{if:else}
 	disable="categories|member_data|pagination"
 	limit="6"
 	{/if}
