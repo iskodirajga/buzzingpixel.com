@@ -10,7 +10,7 @@ mkdir -p /home/forge/backups/buzzingpixel.com/${DATE};
 tar -czf /home/forge/backups/buzzingpixel.com/${DATE}/files.tar.gz /home/forge/buzzingpixel.com/;
 
 # Sync to S3
-/usr/local/aws/bin/aws s3 sync /home/forge/backups/ s3://washbackups
+aws s3 sync /home/forge/backups/ s3://zoebackups
 
 # Delete local backup
 rm -rf /home/forge/backups/buzzingpixel.com;
